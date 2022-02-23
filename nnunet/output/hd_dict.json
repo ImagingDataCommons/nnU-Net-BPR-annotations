@@ -1,0 +1,3840 @@
+{
+  "LUNG1-002": {
+    "heart": {
+      "hd": 38.999992,
+      "hd95": 11.881685,
+      "hd_boundaries": 38.999992,
+      "hd95_boundaries": 27.056547
+    },
+    "esophagus": {
+      "hd": 37.028671,
+      "hd95": 10.728773,
+      "hd_boundaries": 37.028671,
+      "hd95_boundaries": 15.182126
+    }
+  },
+  "LUNG1-003": {
+    "heart": {
+      "hd": 21.465446,
+      "hd95": 3.977,
+      "hd_boundaries": 21.465446,
+      "hd95_boundaries": 12.0
+    },
+    "esophagus": {
+      "hd": 8.199162,
+      "hd95": 2.184639,
+      "hd_boundaries": 8.199162,
+      "hd95_boundaries": 3.122313
+    }
+  },
+  "LUNG1-004": {
+    "heart": {},
+    "esophagus": {
+      "hd": 36.375111,
+      "hd95": 12.67935,
+      "hd_boundaries": 36.375111,
+      "hd95_boundaries": 17.014923
+    }
+  },
+  "LUNG1-005": {
+    "heart": {
+      "hd": 29.999994,
+      "hd95": 8.190842,
+      "hd_boundaries": 29.999994,
+      "hd95_boundaries": 26.428541
+    },
+    "esophagus": {
+      "hd": 9.150215,
+      "hd95": 2.592319,
+      "hd_boundaries": 9.150215,
+      "hd95_boundaries": 4.790119
+    }
+  },
+  "LUNG1-006": {
+    "heart": {
+      "hd": 12.275204,
+      "hd95": 1.667843,
+      "hd_boundaries": 12.919272,
+      "hd95_boundaries": 4.953824
+    },
+    "esophagus": {
+      "hd": 19.031057,
+      "hd95": 5.190844,
+      "hd_boundaries": 19.031057,
+      "hd95_boundaries": 8.160975
+    }
+  },
+  "LUNG1-007": {
+    "heart": {
+      "hd": 28.282381,
+      "hd95": 7.5,
+      "hd_boundaries": 30.0,
+      "hd95_boundaries": 22.596207
+    },
+    "esophagus": {
+      "hd": 14.149533,
+      "hd95": 2.18366,
+      "hd_boundaries": 14.149533,
+      "hd95_boundaries": 3.367353
+    }
+  },
+  "LUNG1-008": {
+    "heart": {
+      "hd": 18.0,
+      "hd95": 5.631888,
+      "hd_boundaries": 18.0,
+      "hd95_boundaries": 16.078585
+    },
+    "esophagus": {
+      "hd": 9.860374,
+      "hd95": 1.9885,
+      "hd_boundaries": 9.860374,
+      "hd95_boundaries": 4.431
+    }
+  },
+  "LUNG1-009": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.126928,
+      "hd95": 9.690843,
+      "hd_boundaries": 25.126928,
+      "hd95_boundaries": 13.544771
+    }
+  },
+  "LUNG1-010": {
+    "heart": {
+      "hd": 27.03533,
+      "hd95": 11.881687,
+      "hd_boundaries": 27.03533,
+      "hd95_boundaries": 27.0
+    },
+    "esophagus": {
+      "hd": 22.107159,
+      "hd95": 6.58712,
+      "hd_boundaries": 22.107159,
+      "hd95_boundaries": 9.159499
+    }
+  },
+  "LUNG1-011": {
+    "heart": {
+      "hd": 12.956203,
+      "hd95": 2.477,
+      "hd_boundaries": 12.992989,
+      "hd95_boundaries": 6.567036
+    },
+    "esophagus": {
+      "hd": 7.630614,
+      "hd95": 1.580819,
+      "hd_boundaries": 7.630614,
+      "hd95_boundaries": 2.9655
+    }
+  },
+  "LUNG1-012": {
+    "heart": {
+      "hd": 21.636276,
+      "hd95": 0.977,
+      "hd_boundaries": 21.636276,
+      "hd95_boundaries": 5.511324
+    },
+    "esophagus": {
+      "hd": 11.822456,
+      "hd95": 2.477,
+      "hd_boundaries": 11.822456,
+      "hd95_boundaries": 3.57253
+    }
+  },
+  "LUNG1-014": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 1.57754,
+      "hd_boundaries": 45.042404,
+      "hd95_boundaries": 20.684875
+    },
+    "esophagus": {
+      "hd": 12.956203,
+      "hd95": 2.9655,
+      "hd_boundaries": 12.956203,
+      "hd95_boundaries": 4.093943
+    }
+  },
+  "LUNG1-016": {
+    "heart": {
+      "hd": 15.623399,
+      "hd95": 1.5,
+      "hd_boundaries": 15.623399,
+      "hd95_boundaries": 6.711151
+    },
+    "esophagus": {
+      "hd": 17.927839,
+      "hd95": 7.172884,
+      "hd_boundaries": 17.927839,
+      "hd95_boundaries": 10.5
+    }
+  },
+  "LUNG1-017": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.860373,
+      "hd95": 1.954,
+      "hd_boundaries": 9.860373,
+      "hd95_boundaries": 3.0
+    }
+  },
+  "LUNG1-018": {
+    "heart": {},
+    "esophagus": {
+      "hd": 4.369277,
+      "hd95": 1.381687,
+      "hd_boundaries": 4.369277,
+      "hd95_boundaries": 2.184639
+    }
+  },
+  "LUNG1-019": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.730406,
+      "hd95": 1.386171,
+      "hd_boundaries": 8.730406,
+      "hd95_boundaries": 3.053974
+    }
+  },
+  "LUNG1-020": {
+    "heart": {
+      "hd": 15.0635,
+      "hd95": 1.9885,
+      "hd_boundaries": 15.0635,
+      "hd95_boundaries": 9.0
+    },
+    "esophagus": {
+      "hd": 16.222858,
+      "hd95": 4.005256,
+      "hd_boundaries": 16.222858,
+      "hd95_boundaries": 6.04156
+    }
+  },
+  "LUNG1-021": {
+    "heart": {
+      "hd": 21.022715,
+      "hd95": 7.5,
+      "hd_boundaries": 21.022715,
+      "hd95_boundaries": 21.0
+    },
+    "esophagus": {
+      "hd": 41.432819,
+      "hd95": 15.520284,
+      "hd_boundaries": 41.432819,
+      "hd95_boundaries": 18.928106
+    }
+  },
+  "LUNG1-022": {
+    "heart": {
+      "hd": 14.448867,
+      "hd95": 0.0,
+      "hd_boundaries": 14.448867,
+      "hd95_boundaries": 3.800689
+    },
+    "esophagus": {
+      "hd": 40.735817,
+      "hd95": 14.671631,
+      "hd_boundaries": 40.735817,
+      "hd95_boundaries": 18.623398
+    }
+  },
+  "LUNG1-023": {
+    "heart": {
+      "hd": 14.0469,
+      "hd95": 3.4885,
+      "hd_boundaries": 14.0469,
+      "hd95_boundaries": 10.552721
+    },
+    "esophagus": {
+      "hd": 6.17909,
+      "hd95": 2.190843,
+      "hd_boundaries": 6.17909,
+      "hd95_boundaries": 3.479637
+    }
+  },
+  "LUNG1-024": {
+    "heart": {
+      "hd": 14.999997,
+      "hd95": 1.9885,
+      "hd_boundaries": 14.999997,
+      "hd95_boundaries": 8.999998
+    },
+    "esophagus": {
+      "hd": 21.692921,
+      "hd95": 6.720304,
+      "hd_boundaries": 21.692921,
+      "hd95_boundaries": 12.553001
+    }
+  },
+  "LUNG1-025": {
+    "heart": {
+      "hd": 11.999998,
+      "hd95": 1.5,
+      "hd_boundaries": 11.999998,
+      "hd95_boundaries": 6.529442
+    },
+    "esophagus": {
+      "hd": 16.402506,
+      "hd95": 4.627634,
+      "hd_boundaries": 16.402506,
+      "hd95_boundaries": 8.059053
+    }
+  },
+  "LUNG1-026": {
+    "heart": {
+      "hd": 42.821491,
+      "hd95": 14.66092,
+      "hd_boundaries": 42.821491,
+      "hd95_boundaries": 33.914707
+    },
+    "esophagus": {
+      "hd": 15.775396,
+      "hd95": 4.150027,
+      "hd_boundaries": 15.775396,
+      "hd95_boundaries": 8.265847
+    }
+  },
+  "LUNG1-028": {
+    "heart": {
+      "hd": 14.780128,
+      "hd95": 1.4655,
+      "hd_boundaries": 15.158254,
+      "hd95_boundaries": 6.0
+    },
+    "esophagus": {
+      "hd": 12.141116,
+      "hd95": 2.881687,
+      "hd_boundaries": 12.141116,
+      "hd95_boundaries": 3.968137
+    }
+  },
+  "LUNG1-030": {
+    "heart": {
+      "hd": 27.000008,
+      "hd95": 7.500002,
+      "hd_boundaries": 27.000008,
+      "hd95_boundaries": 22.500006
+    },
+    "esophagus": {
+      "hd": 13.737709,
+      "hd95": 2.875482,
+      "hd_boundaries": 13.737709,
+      "hd95_boundaries": 4.465501
+    }
+  },
+  "LUNG1-031": {
+    "heart": {
+      "hd": 8.199162,
+      "hd95": 0.0,
+      "hd_boundaries": 8.199162,
+      "hd95_boundaries": 3.0
+    },
+    "esophagus": {
+      "hd": 16.104652,
+      "hd95": 3.977,
+      "hd_boundaries": 16.104652,
+      "hd95_boundaries": 6.0
+    }
+  },
+  "LUNG1-032": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.664252,
+      "hd95": 2.268006,
+      "hd_boundaries": 9.664252,
+      "hd95_boundaries": 4.789881
+    }
+  },
+  "LUNG1-033": {
+    "heart": {
+      "hd": 14.119587,
+      "hd95": 1.5,
+      "hd_boundaries": 14.119587,
+      "hd95_boundaries": 7.306425
+    },
+    "esophagus": {
+      "hd": 33.330933,
+      "hd95": 5.850084,
+      "hd_boundaries": 33.330933,
+      "hd95_boundaries": 9.94596
+    }
+  },
+  "LUNG1-034": {
+    "heart": {
+      "hd": 21.000006,
+      "hd95": 4.604839,
+      "hd_boundaries": 21.000006,
+      "hd95_boundaries": 15.940462
+    },
+    "esophagus": {
+      "hd": 22.029879,
+      "hd95": 8.981394,
+      "hd_boundaries": 22.029879,
+      "hd95_boundaries": 10.967251
+    }
+  },
+  "LUNG1-035": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.182156,
+      "hd95": 3.338852,
+      "hd_boundaries": 14.182156,
+      "hd95_boundaries": 5.783402
+    }
+  },
+  "LUNG1-037": {
+    "heart": {},
+    "esophagus": {
+      "hd": 29.709772,
+      "hd95": 5.403913,
+      "hd_boundaries": 29.709772,
+      "hd95_boundaries": 10.467273
+    }
+  },
+  "LUNG1-038": {
+    "heart": {
+      "hd": 11.053493,
+      "hd95": 1.5,
+      "hd_boundaries": 13.446754,
+      "hd95_boundaries": 7.118267
+    },
+    "esophagus": {
+      "hd": 14.88122,
+      "hd95": 4.269531,
+      "hd_boundaries": 14.88122,
+      "hd95_boundaries": 6.044774
+    }
+  },
+  "LUNG1-039": {
+    "heart": {
+      "hd": 9.097907,
+      "hd95": 0.977,
+      "hd_boundaries": 9.097907,
+      "hd95_boundaries": 4.281706
+    },
+    "esophagus": {
+      "hd": 16.138542,
+      "hd95": 4.4655,
+      "hd_boundaries": 16.138542,
+      "hd95_boundaries": 6.454
+    }
+  },
+  "LUNG1-040": {
+    "heart": {
+      "hd": 22.428656,
+      "hd95": 7.500002,
+      "hd_boundaries": 22.428656,
+      "hd95_boundaries": 20.377598
+    },
+    "esophagus": {
+      "hd": 26.870861,
+      "hd95": 10.552416,
+      "hd_boundaries": 26.870861,
+      "hd95_boundaries": 13.771254
+    }
+  },
+  "LUNG1-041": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.390951,
+      "hd95": 5.242757,
+      "hd_boundaries": 13.390951,
+      "hd95_boundaries": 7.526437
+    }
+  },
+  "LUNG1-042": {
+    "heart": {
+      "hd": 24.666866,
+      "hd95": 4.22253,
+      "hd_boundaries": 24.666866,
+      "hd95_boundaries": 16.502253
+    },
+    "esophagus": {
+      "hd": 19.896166,
+      "hd95": 3.074067,
+      "hd_boundaries": 19.896166,
+      "hd95_boundaries": 6.246973
+    }
+  },
+  "LUNG1-043": {
+    "heart": {
+      "hd": 15.460967,
+      "hd95": 0.4885,
+      "hd_boundaries": 15.460967,
+      "hd95_boundaries": 5.4425
+    },
+    "esophagus": {
+      "hd": 11.764638,
+      "hd95": 2.959227,
+      "hd_boundaries": 11.764638,
+      "hd95_boundaries": 4.298076
+    }
+  },
+  "LUNG1-044": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.490459,
+      "hd95": 4.331823,
+      "hd_boundaries": 20.490459,
+      "hd95_boundaries": 6.190116
+    }
+  },
+  "LUNG1-046": {
+    "heart": {
+      "hd": 15.000004,
+      "hd95": 2.477,
+      "hd_boundaries": 15.000004,
+      "hd95_boundaries": 7.561951
+    },
+    "esophagus": {
+      "hd": 16.48551,
+      "hd95": 4.381687,
+      "hd_boundaries": 16.48551,
+      "hd95_boundaries": 6.558839
+    }
+  },
+  "LUNG1-047": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.352763,
+      "hd95": 3.817072,
+      "hd_boundaries": 12.352763,
+      "hd95_boundaries": 7.544773
+    }
+  },
+  "LUNG1-051": {
+    "heart": {
+      "hd": 15.500283,
+      "hd95": 4.5,
+      "hd_boundaries": 15.500283,
+      "hd95_boundaries": 13.676226
+    },
+    "esophagus": {
+      "hd": 9.765625,
+      "hd95": 2.472898,
+      "hd_boundaries": 9.765625,
+      "hd95_boundaries": 3.557316
+    }
+  },
+  "LUNG1-052": {
+    "heart": {},
+    "esophagus": {
+      "hd": 31.47485,
+      "hd95": 12.29012,
+      "hd_boundaries": 31.47485,
+      "hd95_boundaries": 15.099022
+    }
+  },
+  "LUNG1-053": {
+    "heart": {},
+    "esophagus": {
+      "hd": 39.467335,
+      "hd95": 12.775176,
+      "hd_boundaries": 39.467335,
+      "hd95_boundaries": 15.614613
+    }
+  },
+  "LUNG1-054": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.843319,
+      "hd95": 8.053164,
+      "hd_boundaries": 21.843319,
+      "hd95_boundaries": 11.002621
+    }
+  },
+  "LUNG1-055": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.760429,
+      "hd95": 8.768205,
+      "hd_boundaries": 22.760429,
+      "hd95_boundaries": 9.450533
+    }
+  },
+  "LUNG1-056": {
+    "heart": {},
+    "esophagus": {
+      "hd": 41.597687,
+      "hd95": 27.184328,
+      "hd_boundaries": 41.597687,
+      "hd95_boundaries": 32.003807
+    }
+  },
+  "LUNG1-057": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.490885,
+      "hd95": 9.120131,
+      "hd_boundaries": 21.490885,
+      "hd95_boundaries": 11.745392
+    }
+  },
+  "LUNG1-058": {
+    "heart": {},
+    "esophagus": {
+      "hd": 31.447723,
+      "hd95": 5.190534,
+      "hd_boundaries": 31.447723,
+      "hd95_boundaries": 8.50704
+    }
+  },
+  "LUNG1-059": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.847799,
+      "hd95": 4.634318,
+      "hd_boundaries": 17.847799,
+      "hd95_boundaries": 8.480322
+    }
+  },
+  "LUNG1-060": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.341452,
+      "hd95": 5.119176,
+      "hd_boundaries": 18.341452,
+      "hd95_boundaries": 7.855576
+    }
+  },
+  "LUNG1-061": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.000002,
+      "hd95": 2.477,
+      "hd_boundaries": 12.000002,
+      "hd95_boundaries": 5.194392
+    }
+  },
+  "LUNG1-062": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.032898,
+      "hd95": 6.942501,
+      "hd_boundaries": 20.032898,
+      "hd95_boundaries": 9.576534
+    }
+  },
+  "LUNG1-064": {
+    "heart": {
+      "hd": 51.250675,
+      "hd95": 17.679903,
+      "hd_boundaries": 51.250675,
+      "hd95_boundaries": 38.374924
+    },
+    "esophagus": {
+      "hd": 37.759735,
+      "hd95": 10.916327,
+      "hd_boundaries": 37.759735,
+      "hd95_boundaries": 16.01359
+    }
+  },
+  "LUNG1-065": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.892744,
+      "hd95": 4.760524,
+      "hd_boundaries": 24.892744,
+      "hd95_boundaries": 11.419809
+    }
+  },
+  "LUNG1-066": {
+    "heart": {
+      "hd": 9.465242,
+      "hd95": 1.57754,
+      "hd_boundaries": 9.465242,
+      "hd95_boundaries": 9.000003
+    },
+    "esophagus": {
+      "hd": 39.546867,
+      "hd95": 15.000004,
+      "hd_boundaries": 39.546867,
+      "hd95_boundaries": 16.683231
+    }
+  },
+  "LUNG1-068": {
+    "heart": {},
+    "esophagus": {
+      "hd": 7.816,
+      "hd95": 2.358687,
+      "hd_boundaries": 7.816,
+      "hd95_boundaries": 3.400349
+    }
+  },
+  "LUNG1-069": {
+    "heart": {},
+    "esophagus": {
+      "hd": 84.226974,
+      "hd95": 36.748497,
+      "hd_boundaries": 84.226974,
+      "hd95_boundaries": 39.649555
+    }
+  },
+  "LUNG1-070": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.890709,
+      "hd95": 4.443863,
+      "hd_boundaries": 18.890709,
+      "hd95_boundaries": 9.822632
+    }
+  },
+  "LUNG1-071": {
+    "heart": {
+      "hd": 22.596867,
+      "hd95": 7.464845,
+      "hd_boundaries": 22.596867,
+      "hd95_boundaries": 17.566381
+    },
+    "esophagus": {
+      "hd": 22.848686,
+      "hd95": 6.976563,
+      "hd_boundaries": 22.848686,
+      "hd95_boundaries": 10.464845
+    }
+  },
+  "LUNG1-072": {
+    "heart": {},
+    "esophagus": {
+      "hd": 66.641525,
+      "hd95": 25.458729,
+      "hd_boundaries": 66.641525,
+      "hd95_boundaries": 27.96283
+    }
+  },
+  "LUNG1-073": {
+    "heart": {},
+    "esophagus": {
+      "hd": 26.452744,
+      "hd95": 8.191572,
+      "hd_boundaries": 26.452744,
+      "hd95_boundaries": 11.071681
+    }
+  },
+  "LUNG1-074": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.15604,
+      "hd95": 5.629688,
+      "hd_boundaries": 19.15604,
+      "hd95_boundaries": 8.510633
+    }
+  },
+  "LUNG1-075": {
+    "heart": {},
+    "esophagus": {
+      "hd": 31.62887,
+      "hd95": 13.837383,
+      "hd_boundaries": 31.62887,
+      "hd95_boundaries": 20.455383
+    }
+  },
+  "LUNG1-076": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.283602,
+      "hd95": 2.033273,
+      "hd_boundaries": 13.283602,
+      "hd95_boundaries": 5.004719
+    }
+  },
+  "LUNG1-078": {
+    "heart": {
+      "hd": 39.744534,
+      "hd95": 7.935077,
+      "hd_boundaries": 39.744534,
+      "hd95_boundaries": 24.128571
+    },
+    "esophagus": {
+      "hd": 51.157288,
+      "hd95": 20.473434,
+      "hd_boundaries": 51.157288,
+      "hd95_boundaries": 23.743122
+    }
+  },
+  "LUNG1-079": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.938929,
+      "hd95": 2.989798,
+      "hd_boundaries": 17.938929,
+      "hd95_boundaries": 4.365391
+    }
+  },
+  "LUNG1-080": {
+    "heart": {
+      "hd": 22.73377,
+      "hd95": 4.25271,
+      "hd_boundaries": 22.73377,
+      "hd95_boundaries": 9.449465
+    },
+    "esophagus": {
+      "hd": 42.831902,
+      "hd95": 16.672592,
+      "hd_boundaries": 42.831902,
+      "hd95_boundaries": 18.431145
+    }
+  },
+  "LUNG1-081": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.408081,
+      "hd95": 2.557819,
+      "hd_boundaries": 15.408081,
+      "hd95_boundaries": 3.891027
+    }
+  },
+  "LUNG1-082": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.628664,
+      "hd95": 5.476562,
+      "hd_boundaries": 19.628664,
+      "hd95_boundaries": 8.441406
+    }
+  },
+  "LUNG1-083": {
+    "heart": {
+      "hd": 32.203205,
+      "hd95": 3.0,
+      "hd_boundaries": 32.203205,
+      "hd95_boundaries": 13.68703
+    },
+    "esophagus": {
+      "hd": 15.708661,
+      "hd95": 2.501516,
+      "hd_boundaries": 15.708661,
+      "hd95_boundaries": 5.010232
+    }
+  },
+  "LUNG1-084": {
+    "heart": {},
+    "esophagus": {
+      "hd": 28.661938,
+      "hd95": 6.332127,
+      "hd_boundaries": 28.661938,
+      "hd95_boundaries": 9.516438
+    }
+  },
+  "LUNG1-085": {
+    "heart": {
+      "hd": 48.514301,
+      "hd95": 14.790567,
+      "hd_boundaries": 48.514301,
+      "hd95_boundaries": 37.637398
+    },
+    "esophagus": {
+      "hd": 34.081398,
+      "hd95": 17.610106,
+      "hd_boundaries": 34.081398,
+      "hd95_boundaries": 19.769743
+    }
+  },
+  "LUNG1-087": {
+    "heart": {
+      "hd": 45.084766,
+      "hd95": 14.927072,
+      "hd_boundaries": 45.084766,
+      "hd95_boundaries": 33.803051
+    },
+    "esophagus": {
+      "hd": 22.165522,
+      "hd95": 3.261312,
+      "hd_boundaries": 22.165522,
+      "hd95_boundaries": 5.067633
+    }
+  },
+  "LUNG1-088": {
+    "heart": {},
+    "esophagus": {
+      "hd": 23.848804,
+      "hd95": 11.862001,
+      "hd_boundaries": 23.848804,
+      "hd95_boundaries": 15.3973
+    }
+  },
+  "LUNG1-089": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.262478,
+      "hd95": 6.977001,
+      "hd_boundaries": 19.262478,
+      "hd95_boundaries": 9.000002
+    }
+  },
+  "LUNG1-091": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.882278,
+      "hd95": 2.557819,
+      "hd_boundaries": 12.882278,
+      "hd95_boundaries": 4.169597
+    }
+  },
+  "LUNG1-092": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.283575,
+      "hd95": 9.876907,
+      "hd_boundaries": 21.283575,
+      "hd95_boundaries": 11.378864
+    }
+  },
+  "LUNG1-093": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.412815,
+      "hd95": 3.596608,
+      "hd_boundaries": 17.412815,
+      "hd95_boundaries": 6.732628
+    }
+  },
+  "LUNG1-094": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.031166,
+      "hd95": 5.649194,
+      "hd_boundaries": 20.031166,
+      "hd95_boundaries": 6.284632
+    }
+  },
+  "LUNG1-095": {
+    "heart": {},
+    "esophagus": {
+      "hd": 33.244949,
+      "hd95": 13.499998,
+      "hd_boundaries": 33.244949,
+      "hd95_boundaries": 13.968992
+    }
+  },
+  "LUNG1-096": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.879327,
+      "hd95": 3.077473,
+      "hd_boundaries": 12.879327,
+      "hd95_boundaries": 5.629476
+    }
+  },
+  "LUNG1-097": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.840616,
+      "hd95": 4.953125,
+      "hd_boundaries": 17.840616,
+      "hd95_boundaries": 7.262136
+    }
+  },
+  "LUNG1-098": {
+    "heart": {},
+    "esophagus": {
+      "hd": 253.871384,
+      "hd95": 5.312886,
+      "hd_boundaries": 253.871384,
+      "hd95_boundaries": 6.955353
+    }
+  },
+  "LUNG1-099": {
+    "heart": {},
+    "esophagus": {
+      "hd": 140.812378,
+      "hd95": 72.282341,
+      "hd_boundaries": 140.812378,
+      "hd95_boundaries": 76.113907
+    }
+  },
+  "LUNG1-100": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.075039,
+      "hd95": 2.476562,
+      "hd_boundaries": 10.075039,
+      "hd95_boundaries": 3.225367
+    }
+  },
+  "LUNG1-101": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.401194,
+      "hd95": 4.175426,
+      "hd_boundaries": 22.401194,
+      "hd95_boundaries": 6.483653
+    }
+  },
+  "LUNG1-103": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 4.5,
+      "hd_boundaries": 21.0,
+      "hd95_boundaries": 16.5
+    },
+    "esophagus": {
+      "hd": 19.791931,
+      "hd95": 4.953125,
+      "hd_boundaries": 19.791931,
+      "hd95_boundaries": 7.389354
+    }
+  },
+  "LUNG1-104": {
+    "heart": {},
+    "esophagus": {
+      "hd": 54.860905,
+      "hd95": 20.379652,
+      "hd_boundaries": 54.860905,
+      "hd95_boundaries": 26.175993
+    }
+  },
+  "LUNG1-105": {
+    "heart": {},
+    "esophagus": {
+      "hd": 26.020117,
+      "hd95": 10.547593,
+      "hd_boundaries": 26.020117,
+      "hd95_boundaries": 12.35433
+    }
+  },
+  "LUNG1-106": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.810505,
+      "hd95": 3.163432,
+      "hd_boundaries": 13.810505,
+      "hd95_boundaries": 7.953125
+    }
+  },
+  "LUNG1-107": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.755188,
+      "hd95": 3.454,
+      "hd_boundaries": 19.755188,
+      "hd95_boundaries": 5.039377
+    }
+  },
+  "LUNG1-108": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.617699,
+      "hd95": 5.321095,
+      "hd_boundaries": 20.617699,
+      "hd95_boundaries": 8.964844
+    }
+  },
+  "LUNG1-109": {
+    "heart": {},
+    "esophagus": {
+      "hd": 42.048698,
+      "hd95": 10.962648,
+      "hd_boundaries": 42.048698,
+      "hd95_boundaries": 15.650808
+    }
+  },
+  "LUNG1-110": {
+    "heart": {},
+    "esophagus": {
+      "hd": 28.849756,
+      "hd95": 11.786795,
+      "hd_boundaries": 28.849756,
+      "hd95_boundaries": 15.943117
+    }
+  },
+  "LUNG1-112": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.178152,
+      "hd95": 7.305315,
+      "hd_boundaries": 24.178152,
+      "hd95_boundaries": 11.441406
+    }
+  },
+  "LUNG1-113": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.925432,
+      "hd95": 6.976562,
+      "hd_boundaries": 17.925432,
+      "hd95_boundaries": 9.075803
+    }
+  },
+  "LUNG1-114": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.019546,
+      "hd95": 1.782364,
+      "hd_boundaries": 8.019546,
+      "hd95_boundaries": 2.881068
+    }
+  },
+  "LUNG1-116": {
+    "heart": {
+      "hd": 33.0,
+      "hd95": 12.151314,
+      "hd_boundaries": 33.0,
+      "hd95_boundaries": 25.204245
+    },
+    "esophagus": {
+      "hd": 42.294498,
+      "hd95": 9.889416,
+      "hd_boundaries": 42.294498,
+      "hd95_boundaries": 21.60041
+    }
+  },
+  "LUNG1-119": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.259081,
+      "hd95": 7.828753,
+      "hd_boundaries": 19.259081,
+      "hd95_boundaries": 9.579222
+    }
+  },
+  "LUNG1-120": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.277073,
+      "hd95": 2.59183,
+      "hd_boundaries": 10.277073,
+      "hd95_boundaries": 4.622528
+    }
+  },
+  "LUNG1-121": {
+    "heart": {},
+    "esophagus": {
+      "hd": 175.204361,
+      "hd95": 84.188164,
+      "hd_boundaries": 175.204361,
+      "hd95_boundaries": 87.207809
+    }
+  },
+  "LUNG1-123": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.030159,
+      "hd95": 8.476562,
+      "hd_boundaries": 19.030159,
+      "hd95_boundaries": 10.5
+    }
+  },
+  "LUNG1-124": {
+    "heart": {
+      "hd": 25.229015,
+      "hd95": 7.5,
+      "hd_boundaries": 25.229015,
+      "hd95_boundaries": 21.0
+    },
+    "esophagus": {
+      "hd": 21.090973,
+      "hd95": 2.95854,
+      "hd_boundaries": 21.090973,
+      "hd95_boundaries": 4.769978
+    }
+  },
+  "LUNG1-125": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.791318,
+      "hd95": 2.637092,
+      "hd_boundaries": 10.791318,
+      "hd95_boundaries": 3.514137
+    }
+  },
+  "LUNG1-126": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.11302,
+      "hd95": 7.631121,
+      "hd_boundaries": 22.11302,
+      "hd95_boundaries": 13.555483
+    }
+  },
+  "LUNG1-127": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.986866,
+      "hd95": 5.476562,
+      "hd_boundaries": 15.986866,
+      "hd95_boundaries": 7.97296
+    }
+  },
+  "LUNG1-129": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.443101,
+      "hd95": 1.953125,
+      "hd_boundaries": 8.443101,
+      "hd95_boundaries": 3.077472
+    }
+  },
+  "LUNG1-130": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.573919,
+      "hd95": 7.403445,
+      "hd_boundaries": 18.573919,
+      "hd95_boundaries": 8.95284
+    }
+  },
+  "LUNG1-132": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.063444,
+      "hd95": 6.0,
+      "hd_boundaries": 15.063444,
+      "hd95_boundaries": 10.5
+    }
+  },
+  "LUNG1-135": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 3.338528,
+      "hd_boundaries": 21.225851,
+      "hd95_boundaries": 12.252954
+    },
+    "esophagus": {
+      "hd": 18.828638,
+      "hd95": 5.881068,
+      "hd_boundaries": 18.828638,
+      "hd95_boundaries": 8.089276
+    }
+  },
+  "LUNG1-136": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.601562,
+      "hd95": 6.031647,
+      "hd_boundaries": 16.601562,
+      "hd95_boundaries": 7.171877
+    }
+  },
+  "LUNG1-137": {
+    "heart": {
+      "hd": 57.34227,
+      "hd95": 19.649654,
+      "hd_boundaries": 57.34227,
+      "hd95_boundaries": 43.393623
+    },
+    "esophagus": {
+      "hd": 14.780128,
+      "hd95": 4.181865,
+      "hd_boundaries": 14.780128,
+      "hd95_boundaries": 6.026437
+    }
+  },
+  "LUNG1-138": {
+    "heart": {},
+    "esophagus": {
+      "hd": 29.971554,
+      "hd95": 14.660336,
+      "hd_boundaries": 29.971554,
+      "hd95_boundaries": 15.180107
+    }
+  },
+  "LUNG1-139": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.928848,
+      "hd95": 3.596608,
+      "hd_boundaries": 13.928848,
+      "hd95_boundaries": 4.625914
+    }
+  },
+  "LUNG1-143": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.961414,
+      "hd95": 5.264429,
+      "hd_boundaries": 18.961414,
+      "hd95_boundaries": 6.780609
+    }
+  },
+  "LUNG1-144": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.680953,
+      "hd95": 3.048164,
+      "hd_boundaries": 14.680953,
+      "hd95_boundaries": 4.50432
+    }
+  },
+  "LUNG1-148": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.081462,
+      "hd95": 2.964844,
+      "hd_boundaries": 13.081462,
+      "hd95_boundaries": 5.013235
+    }
+  },
+  "LUNG1-150": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.134336,
+      "hd95": 6.232417,
+      "hd_boundaries": 25.134336,
+      "hd95_boundaries": 8.763845
+    }
+  },
+  "LUNG1-151": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.810505,
+      "hd95": 3.550404,
+      "hd_boundaries": 13.810505,
+      "hd95_boundaries": 5.441406
+    }
+  },
+  "LUNG1-152": {
+    "heart": {
+      "hd": 6.90534,
+      "hd95": 0.976562,
+      "hd_boundaries": 6.90534,
+      "hd95_boundaries": 3.521046
+    },
+    "esophagus": {
+      "hd": 22.395767,
+      "hd95": 4.962107,
+      "hd_boundaries": 22.395767,
+      "hd95_boundaries": 7.603304
+    }
+  },
+  "LUNG1-153": {
+    "heart": {},
+    "esophagus": {
+      "hd": 41.712048,
+      "hd95": 13.35712,
+      "hd_boundaries": 41.712048,
+      "hd95_boundaries": 18.246689
+    }
+  },
+  "LUNG1-154": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.119585,
+      "hd95": 6.355576,
+      "hd_boundaries": 14.119585,
+      "hd95_boundaries": 7.806971
+    }
+  },
+  "LUNG1-155": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.57049,
+      "hd95": 5.022624,
+      "hd_boundaries": 17.57049,
+      "hd95_boundaries": 6.359323
+    }
+  },
+  "LUNG1-156": {
+    "heart": {},
+    "esophagus": {
+      "hd": 44.974171,
+      "hd95": 18.966833,
+      "hd_boundaries": 44.974171,
+      "hd95_boundaries": 22.756805
+    }
+  },
+  "LUNG1-158": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.695728,
+      "hd95": 5.923184,
+      "hd_boundaries": 12.695728,
+      "hd95_boundaries": 6.651305
+    }
+  },
+  "LUNG1-159": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.320921,
+      "hd95": 3.138527,
+      "hd_boundaries": 14.320921,
+      "hd95_boundaries": 5.722486
+    }
+  },
+  "LUNG1-160": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.068792,
+      "hd95": 3.870824,
+      "hd_boundaries": 16.068792,
+      "hd95_boundaries": 4.75998
+    }
+  },
+  "LUNG1-162": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.157907,
+      "hd95": 2.881068,
+      "hd_boundaries": 12.157907,
+      "hd95_boundaries": 3.944183
+    }
+  },
+  "LUNG1-164": {
+    "heart": {},
+    "esophagus": {
+      "hd": 26.45709,
+      "hd95": 12.579762,
+      "hd_boundaries": 26.45709,
+      "hd95_boundaries": 15.232416
+    }
+  },
+  "LUNG1-165": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.909403,
+      "hd95": 2.441406,
+      "hd_boundaries": 18.909403,
+      "hd95_boundaries": 3.116158
+    }
+  },
+  "LUNG1-166": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.451638,
+      "hd95": 3.13194,
+      "hd_boundaries": 14.451638,
+      "hd95_boundaries": 5.06315
+    }
+  },
+  "LUNG1-167": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.819534,
+      "hd95": 2.556674,
+      "hd_boundaries": 10.819534,
+      "hd95_boundaries": 4.196895
+    }
+  },
+  "LUNG1-168": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.05294,
+      "hd95": 1.464844,
+      "hd_boundaries": 8.05294,
+      "hd95_boundaries": 2.881068
+    }
+  },
+  "LUNG1-169": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.011818,
+      "hd95": 10.041236,
+      "hd_boundaries": 25.011818,
+      "hd95_boundaries": 12.077473
+    }
+  },
+  "LUNG1-170": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.956203,
+      "hd95": 2.474006,
+      "hd_boundaries": 12.956203,
+      "hd95_boundaries": 3.228983
+    }
+  },
+  "LUNG1-171": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.328505,
+      "hd95": 3.339755,
+      "hd_boundaries": 19.328505,
+      "hd95_boundaries": 7.420673
+    }
+  },
+  "LUNG1-172": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.939454,
+      "hd95": 4.712874,
+      "hd_boundaries": 14.939454,
+      "hd95_boundaries": 5.73681
+    }
+  },
+  "LUNG1-173": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.194113,
+      "hd95": 4.092319,
+      "hd_boundaries": 15.194113,
+      "hd95_boundaries": 6.282119
+    }
+  },
+  "LUNG1-174": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.856892,
+      "hd95": 6.75606,
+      "hd_boundaries": 21.856892,
+      "hd95_boundaries": 12.065382
+    }
+  },
+  "LUNG1-175": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.724197,
+      "hd95": 9.513235,
+      "hd_boundaries": 24.724197,
+      "hd95_boundaries": 12.731875
+    }
+  },
+  "LUNG1-176": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.159302,
+      "hd95": 4.350608,
+      "hd_boundaries": 25.159302,
+      "hd95_boundaries": 5.964844
+    }
+  },
+  "LUNG1-177": {
+    "heart": {},
+    "esophagus": {
+      "hd": 7.630614,
+      "hd95": 1.783163,
+      "hd_boundaries": 7.630614,
+      "hd95_boundaries": 2.853631
+    }
+  },
+  "LUNG1-178": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.128682,
+      "hd95": 4.544081,
+      "hd_boundaries": 15.128682,
+      "hd95_boundaries": 6.941406
+    }
+  },
+  "LUNG1-179": {
+    "heart": {},
+    "esophagus": {
+      "hd": 23.608225,
+      "hd95": 7.000423,
+      "hd_boundaries": 23.608225,
+      "hd95_boundaries": 11.441406
+    }
+  },
+  "LUNG1-180": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.45365,
+      "hd95": 4.954,
+      "hd_boundaries": 14.45365,
+      "hd95_boundaries": 7.47143
+    }
+  },
+  "LUNG1-181": {
+    "heart": {},
+    "esophagus": {
+      "hd": 39.498959,
+      "hd95": 15.624824,
+      "hd_boundaries": 39.498959,
+      "hd95_boundaries": 21.028873
+    }
+  },
+  "LUNG1-182": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.390951,
+      "hd95": 2.4425,
+      "hd_boundaries": 13.390951,
+      "hd95_boundaries": 3.498773
+    }
+  },
+  "LUNG1-183": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.203375,
+      "hd95": 2.527239,
+      "hd_boundaries": 21.203375,
+      "hd95_boundaries": 6.0
+    }
+  },
+  "LUNG1-184": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.283598,
+      "hd95": 2.557819,
+      "hd_boundaries": 13.283598,
+      "hd95_boundaries": 3.302886
+    }
+  },
+  "LUNG1-185": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.283598,
+      "hd95": 3.908,
+      "hd_boundaries": 13.283598,
+      "hd95_boundaries": 6.338816
+    }
+  },
+  "LUNG1-186": {
+    "heart": {},
+    "esophagus": {
+      "hd": 36.134121,
+      "hd95": 13.84335,
+      "hd_boundaries": 36.134121,
+      "hd95_boundaries": 18.334513
+    }
+  },
+  "LUNG1-189": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.136644,
+      "hd95": 7.214464,
+      "hd_boundaries": 17.136644,
+      "hd95_boundaries": 9.979523
+    }
+  },
+  "LUNG1-190": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.535229,
+      "hd95": 3.872558,
+      "hd_boundaries": 21.535229,
+      "hd95_boundaries": 5.528274
+    }
+  },
+  "LUNG1-191": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.664252,
+      "hd95": 2.766444,
+      "hd_boundaries": 9.664252,
+      "hd95_boundaries": 6.044081
+    }
+  },
+  "LUNG1-192": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.105881,
+      "hd95": 6.870639,
+      "hd_boundaries": 16.105881,
+      "hd95_boundaries": 8.299977
+    }
+  },
+  "LUNG1-193": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.322603,
+      "hd95": 7.786716,
+      "hd_boundaries": 21.322603,
+      "hd95_boundaries": 10.760523
+    }
+  },
+  "LUNG1-194": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.283557,
+      "hd95": 7.33912,
+      "hd_boundaries": 13.283557,
+      "hd95_boundaries": 8.815159
+    }
+  },
+  "LUNG1-196": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.190362,
+      "hd95": 3.141591,
+      "hd_boundaries": 13.190362,
+      "hd95_boundaries": 4.101723
+    }
+  },
+  "LUNG1-197": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.57497,
+      "hd95": 2.964844,
+      "hd_boundaries": 14.57497,
+      "hd95_boundaries": 4.582203
+    }
+  },
+  "LUNG1-198": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.961926,
+      "hd95": 6.457966,
+      "hd_boundaries": 17.961926,
+      "hd95_boundaries": 9.026437
+    }
+  },
+  "LUNG1-199": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.870926,
+      "hd95": 5.182673,
+      "hd_boundaries": 13.870926,
+      "hd95_boundaries": 6.250708
+    }
+  },
+  "LUNG1-201": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.113096,
+      "hd95": 4.02004,
+      "hd_boundaries": 16.113096,
+      "hd95_boundaries": 6.292531
+    }
+  },
+  "LUNG1-202": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 4.832126,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 21.0
+    },
+    "esophagus": {
+      "hd": 16.858082,
+      "hd95": 4.296694,
+      "hd_boundaries": 16.858082,
+      "hd95_boundaries": 6.027233
+    }
+  },
+  "LUNG1-203": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.830742,
+      "hd95": 4.64479,
+      "hd_boundaries": 14.830742,
+      "hd95_boundaries": 6.194895
+    }
+  },
+  "LUNG1-204": {
+    "heart": {
+      "hd": 13.846532,
+      "hd95": 1.954,
+      "hd_boundaries": 13.846532,
+      "hd95_boundaries": 6.0
+    },
+    "esophagus": {
+      "hd": 8.404471,
+      "hd95": 3.0,
+      "hd_boundaries": 8.404471,
+      "hd95_boundaries": 3.338852
+    }
+  },
+  "LUNG1-205": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.120919,
+      "hd95": 4.510767,
+      "hd_boundaries": 15.120919,
+      "hd95_boundaries": 5.489756
+    }
+  },
+  "LUNG1-206": {
+    "heart": {},
+    "esophagus": {
+      "hd": 33.014446,
+      "hd95": 10.52904,
+      "hd_boundaries": 33.014446,
+      "hd95_boundaries": 12.982543
+    }
+  },
+  "LUNG1-207": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.194044,
+      "hd95": 5.477,
+      "hd_boundaries": 17.194044,
+      "hd95_boundaries": 9.261312
+    }
+  },
+  "LUNG1-208": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.101777,
+      "hd95": 4.170277,
+      "hd_boundaries": 13.101777,
+      "hd95_boundaries": 7.760523
+    }
+  },
+  "LUNG1-209": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.32767,
+      "hd95": 1.783163,
+      "hd_boundaries": 11.32767,
+      "hd95_boundaries": 3.04304
+    }
+  },
+  "LUNG1-211": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.957794,
+      "hd95": 4.544081,
+      "hd_boundaries": 11.957794,
+      "hd95_boundaries": 6.547247
+    }
+  },
+  "LUNG1-212": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.772308,
+      "hd95": 4.381068,
+      "hd_boundaries": 19.772308,
+      "hd95_boundaries": 5.30851
+    }
+  },
+  "LUNG1-213": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.657506,
+      "hd95": 6.0,
+      "hd_boundaries": 12.657506,
+      "hd95_boundaries": 8.847144
+    }
+  },
+  "LUNG1-214": {
+    "heart": {},
+    "esophagus": {
+      "hd": 33.180454,
+      "hd95": 2.964844,
+      "hd_boundaries": 33.180454,
+      "hd95_boundaries": 4.760523
+    }
+  },
+  "LUNG1-215": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.789062,
+      "hd95": 2.068393,
+      "hd_boundaries": 8.789062,
+      "hd95_boundaries": 3.304604
+    }
+  },
+  "LUNG1-216": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.17524,
+      "hd95": 2.441406,
+      "hd_boundaries": 12.17524,
+      "hd95_boundaries": 3.260523
+    }
+  },
+  "LUNG1-217": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.174071,
+      "hd95": 6.365459,
+      "hd_boundaries": 15.174071,
+      "hd95_boundaries": 7.595162
+    }
+  },
+  "LUNG1-218": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.322954,
+      "hd95": 3.260523,
+      "hd_boundaries": 11.322954,
+      "hd95_boundaries": 4.038948
+    }
+  },
+  "LUNG1-219": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.068792,
+      "hd95": 5.087908,
+      "hd_boundaries": 16.068792,
+      "hd95_boundaries": 7.93858
+    }
+  },
+  "LUNG1-220": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.515079,
+      "hd95": 2.964844,
+      "hd_boundaries": 9.515079,
+      "hd95_boundaries": 4.504509
+    }
+  },
+  "LUNG1-221": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.079342,
+      "hd95": 7.470099,
+      "hd_boundaries": 24.079342,
+      "hd95_boundaries": 8.687954
+    }
+  },
+  "LUNG1-223": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.352311,
+      "hd95": 4.76845,
+      "hd_boundaries": 14.352311,
+      "hd95_boundaries": 7.5
+    }
+  },
+  "LUNG1-224": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.132758,
+      "hd95": 4.544081,
+      "hd_boundaries": 14.132758,
+      "hd95_boundaries": 6.276259
+    }
+  },
+  "LUNG1-225": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.055201,
+      "hd95": 4.788526,
+      "hd_boundaries": 19.055201,
+      "hd95_boundaries": 7.780358
+    }
+  },
+  "LUNG1-226": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.058636,
+      "hd95": 8.30863,
+      "hd_boundaries": 24.058636,
+      "hd95_boundaries": 9.931631
+    }
+  },
+  "LUNG1-227": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.494637,
+      "hd95": 4.168959,
+      "hd_boundaries": 17.494637,
+      "hd95_boundaries": 8.649221
+    }
+  },
+  "LUNG1-229": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.443101,
+      "hd95": 2.59183,
+      "hd_boundaries": 8.443101,
+      "hd95_boundaries": 5.038958
+    }
+  },
+  "LUNG1-230": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.795649,
+      "hd95": 3.073171,
+      "hd_boundaries": 18.795649,
+      "hd95_boundaries": 6.044081
+    }
+  },
+  "LUNG1-231": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.719276,
+      "hd95": 5.881068,
+      "hd_boundaries": 19.719276,
+      "hd95_boundaries": 8.229544
+    }
+  },
+  "LUNG1-232": {
+    "heart": {},
+    "esophagus": {
+      "hd": 7.528859,
+      "hd95": 1.381068,
+      "hd_boundaries": 7.528859,
+      "hd95_boundaries": 2.881068
+    }
+  },
+  "LUNG1-233": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.122257,
+      "hd95": 2.881068,
+      "hd_boundaries": 10.122257,
+      "hd95_boundaries": 4.077916
+    }
+  },
+  "LUNG1-234": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.031174,
+      "hd95": 6.327384,
+      "hd_boundaries": 14.031174,
+      "hd95_boundaries": 8.471589
+    }
+  },
+  "LUNG1-235": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.622851,
+      "hd95": 3.803116,
+      "hd_boundaries": 15.622851,
+      "hd95_boundaries": 5.682261
+    }
+  },
+  "LUNG1-236": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.454304,
+      "hd95": 3.602431,
+      "hd_boundaries": 15.454304,
+      "hd95_boundaries": 5.358262
+    }
+  },
+  "LUNG1-237": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.929667,
+      "hd95": 5.991257,
+      "hd_boundaries": 18.929667,
+      "hd95_boundaries": 9.476155
+    }
+  },
+  "LUNG1-238": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.176941,
+      "hd95": 2.964844,
+      "hd_boundaries": 14.176941,
+      "hd95_boundaries": 4.02647
+    }
+  },
+  "LUNG1-239": {
+    "heart": {},
+    "esophagus": {
+      "hd": 27.895,
+      "hd95": 6.45267,
+      "hd_boundaries": 27.895,
+      "hd95_boundaries": 10.727243
+    }
+  },
+  "LUNG1-240": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.233747,
+      "hd95": 2.929688,
+      "hd_boundaries": 12.233747,
+      "hd95_boundaries": 4.720678
+    }
+  },
+  "LUNG1-241": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.105881,
+      "hd95": 2.155378,
+      "hd_boundaries": 16.105881,
+      "hd95_boundaries": 3.690272
+    }
+  },
+  "LUNG1-242": {
+    "heart": {},
+    "esophagus": {
+      "hd": 23.486725,
+      "hd95": 7.5,
+      "hd_boundaries": 23.486725,
+      "hd95_boundaries": 12.013236
+    }
+  },
+  "LUNG1-246": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.12616,
+      "hd95": 6.835843,
+      "hd_boundaries": 20.12616,
+      "hd95_boundaries": 9.915358
+    }
+  },
+  "LUNG1-247": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.805795,
+      "hd95": 2.703769,
+      "hd_boundaries": 10.805795,
+      "hd95_boundaries": 4.69021
+    }
+  },
+  "LUNG1-248": {
+    "heart": {},
+    "esophagus": {
+      "hd": 35.284019,
+      "hd95": 17.728069,
+      "hd_boundaries": 35.284019,
+      "hd95_boundaries": 18.548489
+    }
+  },
+  "LUNG1-249": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.315012,
+      "hd95": 10.5,
+      "hd_boundaries": 25.315012,
+      "hd95_boundaries": 15.033072
+    }
+  },
+  "LUNG1-250": {
+    "heart": {},
+    "esophagus": {
+      "hd": 8.195983,
+      "hd95": 1.953125,
+      "hd_boundaries": 8.195983,
+      "hd95_boundaries": 3.693954
+    }
+  },
+  "LUNG1-252": {
+    "heart": {
+      "hd": 27.637402,
+      "hd95": 3.0,
+      "hd_boundaries": 27.637402,
+      "hd95_boundaries": 9.332127
+    },
+    "esophagus": {
+      "hd": 25.576517,
+      "hd95": 9.158838,
+      "hd_boundaries": 25.576517,
+      "hd95_boundaries": 11.23801
+    }
+  },
+  "LUNG1-254": {
+    "heart": {},
+    "esophagus": {
+      "hd": 34.162228,
+      "hd95": 9.886534,
+      "hd_boundaries": 34.162228,
+      "hd95_boundaries": 14.998922
+    }
+  },
+  "LUNG1-255": {
+    "heart": {
+      "hd": 27.0,
+      "hd95": 4.988281,
+      "hd_boundaries": 27.0,
+      "hd95_boundaries": 20.84911
+    },
+    "esophagus": {
+      "hd": 13.894572,
+      "hd95": 3.90625,
+      "hd_boundaries": 13.894572,
+      "hd95_boundaries": 5.157234
+    }
+  },
+  "LUNG1-256": {
+    "heart": {
+      "hd": 39.0,
+      "hd95": 13.988281,
+      "hd_boundaries": 39.0,
+      "hd95_boundaries": 28.904631
+    },
+    "esophagus": {
+      "hd": 9.414319,
+      "hd95": 1.953125,
+      "hd_boundaries": 9.414319,
+      "hd95_boundaries": 3.032382
+    }
+  },
+  "LUNG1-257": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.134525,
+      "hd95": 2.441406,
+      "hd_boundaries": 11.134525,
+      "hd95_boundaries": 4.754292
+    }
+  },
+  "LUNG1-258": {
+    "heart": {},
+    "esophagus": {
+      "hd": 6.90534,
+      "hd95": 1.580111,
+      "hd_boundaries": 6.90534,
+      "hd95_boundaries": 3.077472
+    }
+  },
+  "LUNG1-259": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.2327,
+      "hd95": 4.670606,
+      "hd_boundaries": 24.2327,
+      "hd95_boundaries": 7.657212
+    }
+  },
+  "LUNG1-260": {
+    "heart": {
+      "hd": 47.077957,
+      "hd95": 4.043022,
+      "hd_boundaries": 47.077957,
+      "hd95_boundaries": 14.812749
+    },
+    "esophagus": {
+      "hd": 12.157907,
+      "hd95": 2.190534,
+      "hd_boundaries": 12.157907,
+      "hd95_boundaries": 4.464844
+    }
+  },
+  "LUNG1-261": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.59965,
+      "hd95": 3.976562,
+      "hd_boundaries": 13.59965,
+      "hd95_boundaries": 6.044081
+    }
+  },
+  "LUNG1-262": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.458302,
+      "hd95": 2.766444,
+      "hd_boundaries": 12.458302,
+      "hd95_boundaries": 4.544081
+    }
+  },
+  "LUNG1-263": {
+    "heart": {},
+    "esophagus": {
+      "hd": 54.349419,
+      "hd95": 25.924774,
+      "hd_boundaries": 54.349419,
+      "hd95_boundaries": 34.287762
+    }
+  },
+  "LUNG1-264": {
+    "heart": {},
+    "esophagus": {
+      "hd": 23.759378,
+      "hd95": 7.595787,
+      "hd_boundaries": 23.759378,
+      "hd95_boundaries": 10.11564
+    }
+  },
+  "LUNG1-265": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.134884,
+      "hd95": 5.190534,
+      "hd_boundaries": 19.134884,
+      "hd95_boundaries": 7.5
+    }
+  },
+  "LUNG1-266": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.877316,
+      "hd95": 2.476562,
+      "hd_boundaries": 13.877316,
+      "hd95_boundaries": 5.291653
+    }
+  },
+  "LUNG1-267": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.732731,
+      "hd95": 4.010543,
+      "hd_boundaries": 13.732731,
+      "hd95_boundaries": 4.616949
+    }
+  },
+  "LUNG1-268": {
+    "heart": {},
+    "esophagus": {
+      "hd": 6.90534,
+      "hd95": 1.953125,
+      "hd_boundaries": 6.90534,
+      "hd95_boundaries": 3.225367
+    }
+  },
+  "LUNG1-269": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.959044,
+      "hd95": 2.18366,
+      "hd_boundaries": 10.959044,
+      "hd95_boundaries": 3.521046
+    }
+  },
+  "LUNG1-271": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.734547,
+      "hd95": 6.301674,
+      "hd_boundaries": 25.734547,
+      "hd95_boundaries": 8.10081
+    }
+  },
+  "LUNG1-272": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.370171,
+      "hd95": 3.649074,
+      "hd_boundaries": 16.370171,
+      "hd95_boundaries": 5.567932
+    }
+  },
+  "LUNG1-273": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.147249,
+      "hd95": 4.525013,
+      "hd_boundaries": 21.147249,
+      "hd95_boundaries": 6.146342
+    }
+  },
+  "LUNG1-274": {
+    "heart": {},
+    "esophagus": {
+      "hd": 32.119091,
+      "hd95": 11.339078,
+      "hd_boundaries": 32.119091,
+      "hd95_boundaries": 13.573313
+    }
+  },
+  "LUNG1-275": {
+    "heart": {},
+    "esophagus": {
+      "hd": 31.999651,
+      "hd95": 11.162615,
+      "hd_boundaries": 31.999651,
+      "hd95_boundaries": 16.5
+    }
+  },
+  "LUNG1-276": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 7.5,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 20.671434
+    },
+    "esophagus": {
+      "hd": 6.866365,
+      "hd95": 1.667096,
+      "hd_boundaries": 6.866365,
+      "hd95_boundaries": 3.151314
+    }
+  },
+  "LUNG1-278": {
+    "heart": {
+      "hd": 34.883858,
+      "hd95": 9.0,
+      "hd_boundaries": 35.409634,
+      "hd95_boundaries": 29.113119
+    },
+    "esophagus": {
+      "hd": 14.443512,
+      "hd95": 3.417969,
+      "hd_boundaries": 14.443512,
+      "hd95_boundaries": 5.244488
+    }
+  },
+  "LUNG1-279": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.068792,
+      "hd95": 3.488281,
+      "hd_boundaries": 16.068792,
+      "hd95_boundaries": 6.425321
+    }
+  },
+  "LUNG1-280": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.619778,
+      "hd95": 4.018878,
+      "hd_boundaries": 12.619778,
+      "hd95_boundaries": 5.502137
+    }
+  },
+  "LUNG1-285": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.506176,
+      "hd95": 8.404305,
+      "hd_boundaries": 20.506176,
+      "hd95_boundaries": 9.41345
+    }
+  },
+  "LUNG1-287": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.278086,
+      "hd95": 5.708979,
+      "hd_boundaries": 22.278086,
+      "hd95_boundaries": 9.33958
+    }
+  },
+  "LUNG1-288": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.429611,
+      "hd95": 3.690534,
+      "hd_boundaries": 12.429611,
+      "hd95_boundaries": 6.260523
+    }
+  },
+  "LUNG1-289": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.947929,
+      "hd95": 2.545822,
+      "hd_boundaries": 13.947929,
+      "hd95_boundaries": 4.365391
+    }
+  },
+  "LUNG1-290": {
+    "heart": {},
+    "esophagus": {
+      "hd": 24.97366,
+      "hd95": 7.839477,
+      "hd_boundaries": 24.97366,
+      "hd95_boundaries": 9.715382
+    }
+  },
+  "LUNG1-291": {
+    "heart": {},
+    "esophagus": {
+      "hd": 6.605255,
+      "hd95": 1.667096,
+      "hd_boundaries": 6.605255,
+      "hd95_boundaries": 2.845912
+    }
+  },
+  "LUNG1-292": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.490117,
+      "hd95": 1.988281,
+      "hd_boundaries": 9.490117,
+      "hd95_boundaries": 4.5
+    }
+  },
+  "LUNG1-293": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.469296,
+      "hd95": 3.154944,
+      "hd_boundaries": 11.469296,
+      "hd95_boundaries": 4.615376
+    }
+  },
+  "LUNG1-294": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.742188,
+      "hd95": 2.472898,
+      "hd_boundaries": 10.742188,
+      "hd95_boundaries": 3.088162
+    }
+  },
+  "LUNG1-295": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.409019,
+      "hd95": 9.23037,
+      "hd_boundaries": 25.409019,
+      "hd95_boundaries": 16.5
+    }
+  },
+  "LUNG1-296": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.378765,
+      "hd95": 4.454963,
+      "hd_boundaries": 15.378765,
+      "hd95_boundaries": 7.760523
+    }
+  },
+  "LUNG1-297": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.805795,
+      "hd95": 4.149221,
+      "hd_boundaries": 10.805795,
+      "hd95_boundaries": 5.405795
+    }
+  },
+  "LUNG1-298": {
+    "heart": {
+      "hd": 16.103796,
+      "hd95": 1.5,
+      "hd_boundaries": 16.103796,
+      "hd95_boundaries": 6.0
+    },
+    "esophagus": {
+      "hd": 26.79734,
+      "hd95": 7.97769,
+      "hd_boundaries": 26.79734,
+      "hd95_boundaries": 12.941406
+    }
+  },
+  "LUNG1-300": {
+    "heart": {},
+    "esophagus": {
+      "hd": 7.627197,
+      "hd95": 0.976562,
+      "hd_boundaries": 7.627197,
+      "hd95_boundaries": 2.068393
+    }
+  },
+  "LUNG1-303": {
+    "heart": {},
+    "esophagus": {
+      "hd": 39.715363,
+      "hd95": 8.051329,
+      "hd_boundaries": 39.715363,
+      "hd95_boundaries": 15.02979
+    }
+  },
+  "LUNG1-307": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.622313,
+      "hd95": 5.874589,
+      "hd_boundaries": 19.622313,
+      "hd95_boundaries": 8.417735
+    }
+  },
+  "LUNG1-308": {
+    "heart": {},
+    "esophagus": {
+      "hd": 37.872246,
+      "hd95": 5.991916,
+      "hd_boundaries": 37.872246,
+      "hd95_boundaries": 14.010029
+    }
+  },
+  "LUNG1-310": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.739286,
+      "hd95": 3.394303,
+      "hd_boundaries": 10.739286,
+      "hd95_boundaries": 4.5
+    }
+  },
+  "LUNG1-311": {
+    "heart": {
+      "hd": 15.031755,
+      "hd95": 1.5,
+      "hd_boundaries": 15.031755,
+      "hd95_boundaries": 11.948357
+    },
+    "esophagus": {
+      "hd": 10.915446,
+      "hd95": 2.441406,
+      "hd_boundaries": 10.915446,
+      "hd95_boundaries": 3.441195
+    }
+  },
+  "LUNG1-312": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.833473,
+      "hd95": 4.356157,
+      "hd_boundaries": 18.833473,
+      "hd95_boundaries": 6.619616
+    }
+  },
+  "LUNG1-313": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.872286,
+      "hd95": 8.358262,
+      "hd_boundaries": 17.872286,
+      "hd95_boundaries": 10.640988
+    }
+  },
+  "LUNG1-314": {
+    "heart": {},
+    "esophagus": {
+      "hd": 12.617499,
+      "hd95": 4.09183,
+      "hd_boundaries": 12.617499,
+      "hd95_boundaries": 6.044081
+    }
+  },
+  "LUNG1-315": {
+    "heart": {
+      "hd": 36.382092,
+      "hd95": 8.020003,
+      "hd_boundaries": 36.382092,
+      "hd95_boundaries": 23.82914
+    },
+    "esophagus": {
+      "hd": 23.108234,
+      "hd95": 7.302504,
+      "hd_boundaries": 23.108234,
+      "hd95_boundaries": 10.1235
+    }
+  },
+  "LUNG1-316": {
+    "heart": {},
+    "esophagus": {
+      "hd": 33.466858,
+      "hd95": 9.551202,
+      "hd_boundaries": 33.466858,
+      "hd95_boundaries": 13.158947
+    }
+  },
+  "LUNG1-318": {
+    "heart": {},
+    "esophagus": {
+      "hd": 33.842216,
+      "hd95": 5.881758,
+      "hd_boundaries": 33.842216,
+      "hd95_boundaries": 10.274315
+    }
+  },
+  "LUNG1-319": {
+    "heart": {},
+    "esophagus": {
+      "hd": 20.331205,
+      "hd95": 9.346416,
+      "hd_boundaries": 20.331205,
+      "hd95_boundaries": 10.625114
+    }
+  },
+  "LUNG1-321": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 7.5,
+      "hd_boundaries": 21.0,
+      "hd95_boundaries": 18.0
+    },
+    "esophagus": {
+      "hd": 17.60523,
+      "hd95": 5.136085,
+      "hd_boundaries": 17.60523,
+      "hd95_boundaries": 6.596608
+    }
+  },
+  "LUNG1-322": {
+    "heart": {
+      "hd": 36.0,
+      "hd95": 12.812886,
+      "hd_boundaries": 36.0,
+      "hd95_boundaries": 25.601688
+    },
+    "esophagus": {
+      "hd": 37.657276,
+      "hd95": 12.234801,
+      "hd_boundaries": 37.657276,
+      "hd95_boundaries": 13.946514
+    }
+  },
+  "LUNG1-323": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.181959,
+      "hd95": 5.312886,
+      "hd_boundaries": 25.181959,
+      "hd95_boundaries": 7.854078
+    }
+  },
+  "LUNG1-324": {
+    "heart": {},
+    "esophagus": {
+      "hd": 23.628719,
+      "hd95": 8.950663,
+      "hd_boundaries": 23.628719,
+      "hd95_boundaries": 9.422375
+    }
+  },
+  "LUNG1-325": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.659655,
+      "hd95": 4.616949,
+      "hd_boundaries": 21.659655,
+      "hd95_boundaries": 7.322768
+    }
+  },
+  "LUNG1-326": {
+    "heart": {},
+    "esophagus": {
+      "hd": 16.36812,
+      "hd95": 3.404716,
+      "hd_boundaries": 16.36812,
+      "hd95_boundaries": 5.073398
+    }
+  },
+  "LUNG1-327": {
+    "heart": {},
+    "esophagus": {
+      "hd": 14.8082,
+      "hd95": 3.129278,
+      "hd_boundaries": 14.8082,
+      "hd95_boundaries": 5.483722
+    }
+  },
+  "LUNG1-328": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.648478,
+      "hd95": 4.988281,
+      "hd_boundaries": 21.648478,
+      "hd95_boundaries": 7.859056
+    }
+  },
+  "LUNG1-329": {
+    "heart": {
+      "hd": 19.791931,
+      "hd95": 1.760523,
+      "hd_boundaries": 19.791931,
+      "hd95_boundaries": 8.693216
+    },
+    "esophagus": {
+      "hd": 9.20949,
+      "hd95": 2.527239,
+      "hd_boundaries": 9.20949,
+      "hd95_boundaries": 4.5
+    }
+  },
+  "LUNG1-330": {
+    "heart": {},
+    "esophagus": {
+      "hd": 17.242586,
+      "hd95": 2.068393,
+      "hd_boundaries": 17.242586,
+      "hd95_boundaries": 4.018878
+    }
+  },
+  "LUNG1-331": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.494054,
+      "hd95": 2.743144,
+      "hd_boundaries": 13.494054,
+      "hd95_boundaries": 4.855288
+    }
+  },
+  "LUNG1-332": {
+    "heart": {
+      "hd": 27.035297,
+      "hd95": 4.5,
+      "hd_boundaries": 27.035297,
+      "hd95_boundaries": 15.447587
+    },
+    "esophagus": {
+      "hd": 11.708522,
+      "hd95": 1.464844,
+      "hd_boundaries": 11.708522,
+      "hd95_boundaries": 4.016039
+    }
+  },
+  "LUNG1-333": {
+    "heart": {},
+    "esophagus": {
+      "hd": 10.627817,
+      "hd95": 5.096608,
+      "hd_boundaries": 10.627817,
+      "hd95_boundaries": 7.347144
+    }
+  },
+  "LUNG1-334": {
+    "heart": {
+      "hd": 20.436296,
+      "hd95": 3.0,
+      "hd_boundaries": 20.436296,
+      "hd95_boundaries": 9.0
+    },
+    "esophagus": {
+      "hd": 23.436068,
+      "hd95": 10.760523,
+      "hd_boundaries": 23.436068,
+      "hd95_boundaries": 12.087523
+    }
+  },
+  "LUNG1-336": {
+    "heart": {},
+    "esophagus": {
+      "hd": 9.464833,
+      "hd95": 2.065753,
+      "hd_boundaries": 9.464833,
+      "hd95_boundaries": 4.50432
+    }
+  },
+  "LUNG1-337": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.071346,
+      "hd95": 4.868835,
+      "hd_boundaries": 18.071346,
+      "hd95_boundaries": 6.577374
+    }
+  },
+  "LUNG1-338": {
+    "heart": {},
+    "esophagus": {
+      "hd": 21.300228,
+      "hd95": 7.320981,
+      "hd_boundaries": 21.300228,
+      "hd95_boundaries": 10.288424
+    }
+  },
+  "LUNG1-339": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.0,
+      "hd95": 5.59183,
+      "hd_boundaries": 18.0,
+      "hd95_boundaries": 9.453125
+    }
+  },
+  "LUNG1-340": {
+    "heart": {},
+    "esophagus": {
+      "hd": 19.304068,
+      "hd95": 5.964844,
+      "hd_boundaries": 19.304068,
+      "hd95_boundaries": 6.909497
+    }
+  },
+  "LUNG1-341": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 7.988281,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 19.82526
+    },
+    "esophagus": {
+      "hd": 40.78109,
+      "hd95": 16.041901,
+      "hd_boundaries": 40.78109,
+      "hd95_boundaries": 17.859886
+    }
+  },
+  "LUNG1-342": {
+    "heart": {},
+    "esophagus": {
+      "hd": 28.976305,
+      "hd95": 10.976778,
+      "hd_boundaries": 28.976305,
+      "hd95_boundaries": 12.165438
+    }
+  },
+  "LUNG1-343": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.729765,
+      "hd95": 7.111666,
+      "hd_boundaries": 22.729765,
+      "hd95_boundaries": 10.031999
+    }
+  },
+  "LUNG1-344": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.28034,
+      "hd95": 3.690534,
+      "hd_boundaries": 13.28034,
+      "hd95_boundaries": 6.276497
+    }
+  },
+  "LUNG1-346": {
+    "heart": {
+      "hd": 30.126888,
+      "hd95": 12.0,
+      "hd_boundaries": 30.126888,
+      "hd95_boundaries": 27.255127
+    },
+    "esophagus": {
+      "hd": 12.955379,
+      "hd95": 2.476562,
+      "hd_boundaries": 12.955379,
+      "hd95_boundaries": 3.68366
+    }
+  },
+  "LUNG1-347": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.160327,
+      "hd95": 3.890358,
+      "hd_boundaries": 15.160327,
+      "hd95_boundaries": 6.088161
+    }
+  },
+  "LUNG1-348": {
+    "heart": {},
+    "esophagus": {
+      "hd": 25.800478,
+      "hd95": 3.367353,
+      "hd_boundaries": 25.800478,
+      "hd95_boundaries": 6.359499
+    }
+  },
+  "LUNG1-349": {
+    "heart": {},
+    "esophagus": {
+      "hd": 11.91785,
+      "hd95": 5.480883,
+      "hd_boundaries": 11.91785,
+      "hd95_boundaries": 6.62982
+    }
+  },
+  "LUNG1-350": {
+    "heart": {},
+    "esophagus": {
+      "hd": 6.605255,
+      "hd95": 1.869349,
+      "hd_boundaries": 6.605255,
+      "hd95_boundaries": 2.964844
+    }
+  },
+  "LUNG1-351": {
+    "heart": {},
+    "esophagus": {
+      "hd": 18.241854,
+      "hd95": 6.313197,
+      "hd_boundaries": 18.241854,
+      "hd95_boundaries": 8.391839
+    }
+  },
+  "LUNG1-352": {
+    "heart": {},
+    "esophagus": {
+      "hd": 13.282686,
+      "hd95": 2.929688,
+      "hd_boundaries": 13.282686,
+      "hd95_boundaries": 5.292084
+    }
+  },
+  "LUNG1-353": {
+    "heart": {},
+    "esophagus": {
+      "hd": 15.057717,
+      "hd95": 3.117756,
+      "hd_boundaries": 15.057717,
+      "hd95_boundaries": 5.787442
+    }
+  },
+  "LUNG1-354": {
+    "heart": {},
+    "esophagus": {
+      "hd": 42.384254,
+      "hd95": 19.872759,
+      "hd_boundaries": 42.384254,
+      "hd95_boundaries": 21.881117
+    }
+  },
+  "LUNG1-355": {
+    "heart": {
+      "hd": 21.677458,
+      "hd95": 4.606436,
+      "hd_boundaries": 21.677458,
+      "hd95_boundaries": 16.515877
+    },
+    "esophagus": {
+      "hd": 22.374357,
+      "hd95": 9.077473,
+      "hd_boundaries": 22.374357,
+      "hd95_boundaries": 10.595458
+    }
+  },
+  "LUNG1-356": {
+    "heart": {
+      "hd": 12.955379,
+      "hd95": 3.335426,
+      "hd_boundaries": 25.577358,
+      "hd95_boundaries": 13.796227
+    },
+    "esophagus": {
+      "hd": 10.742188,
+      "hd95": 2.640997,
+      "hd_boundaries": 10.742188,
+      "hd95_boundaries": 5.881068
+    }
+  },
+  "LUNG1-357": {
+    "heart": {},
+    "esophagus": {
+      "hd": 22.596863,
+      "hd95": 7.241423,
+      "hd_boundaries": 22.596863,
+      "hd95_boundaries": 10.5
+    }
+  },
+  "LUNG1-358": {
+    "heart": {
+      "hd": 9.0,
+      "hd95": 1.381068,
+      "hd_boundaries": 9.0,
+      "hd95_boundaries": 6.472659
+    },
+    "esophagus": {
+      "hd": 7.735752,
+      "hd95": 2.845912,
+      "hd_boundaries": 7.735752,
+      "hd95_boundaries": 3.260523
+    }
+  },
+  "LUNG1-359": {
+    "heart": {
+      "hd": 29.8927,
+      "hd95": 7.5,
+      "hd_boundaries": 31.271536,
+      "hd95_boundaries": 23.559196
+    },
+    "esophagus": {
+      "hd": 19.888067,
+      "hd95": 5.865391,
+      "hd_boundaries": 19.888067,
+      "hd95_boundaries": 8.485428
+    }
+  },
+  "LUNG1-360": {
+    "heart": {},
+    "esophagus": {
+      "hd": 97.635506,
+      "hd95": 44.845058,
+      "hd_boundaries": 97.635506,
+      "hd95_boundaries": 47.546677
+    }
+  },
+  "LUNG1-361": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 1.580111,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 12.662992
+    },
+    "esophagus": {
+      "hd": 12.079411,
+      "hd95": 2.032362,
+      "hd_boundaries": 12.079411,
+      "hd95_boundaries": 4.5
+    }
+  },
+  "LUNG1-362": {
+    "heart": {
+      "hd": 13.044959,
+      "hd95": 2.964844,
+      "hd_boundaries": 22.391808,
+      "hd95_boundaries": 8.465991
+    },
+    "esophagus": {
+      "hd": 12.157907,
+      "hd95": 3.044081,
+      "hd_boundaries": 12.157907,
+      "hd95_boundaries": 5.038958
+    }
+  },
+  "LUNG1-363": {
+    "heart": {
+      "hd": 12.541688,
+      "hd95": 2.964844,
+      "hd_boundaries": 12.541688,
+      "hd95_boundaries": 9.0
+    },
+    "esophagus": {
+      "hd": 12.157907,
+      "hd95": 4.988281,
+      "hd_boundaries": 12.157907,
+      "hd95_boundaries": 7.381068
+    }
+  },
+  "LUNG1-364": {
+    "heart": {
+      "hd": 24.079342,
+      "hd95": 5.320893,
+      "hd_boundaries": 24.079342,
+      "hd95_boundaries": 19.5
+    },
+    "esophagus": {
+      "hd": 52.637951,
+      "hd95": 23.834524,
+      "hd_boundaries": 52.637951,
+      "hd95_boundaries": 26.717293
+    }
+  },
+  "LUNG1-365": {
+    "heart": {
+      "hd": 23.715366,
+      "hd95": 3.374046,
+      "hd_boundaries": 23.715366,
+      "hd95_boundaries": 17.435223
+    },
+    "esophagus": {
+      "hd": 57.050972,
+      "hd95": 26.026386,
+      "hd_boundaries": 57.050972,
+      "hd95_boundaries": 28.092224
+    }
+  },
+  "LUNG1-366": {
+    "heart": {
+      "hd": 33.0,
+      "hd95": 9.0,
+      "hd_boundaries": 33.0,
+      "hd95_boundaries": 24.00993
+    },
+    "esophagus": {
+      "hd": 13.59965,
+      "hd95": 3.478079,
+      "hd_boundaries": 13.59965,
+      "hd95_boundaries": 5.489253
+    }
+  },
+  "LUNG1-367": {
+    "heart": {
+      "hd": 31.386951,
+      "hd95": 6.382812,
+      "hd_boundaries": 31.386951,
+      "hd95_boundaries": 20.204336
+    },
+    "esophagus": {
+      "hd": 16.886202,
+      "hd95": 4.619788,
+      "hd_boundaries": 16.886202,
+      "hd95_boundaries": 8.847144
+    }
+  },
+  "LUNG1-368": {
+    "heart": {
+      "hd": 22.62463,
+      "hd95": 4.5,
+      "hd_boundaries": 22.62463,
+      "hd95_boundaries": 15.610903
+    },
+    "esophagus": {
+      "hd": 15.283583,
+      "hd95": 2.441406,
+      "hd_boundaries": 15.283583,
+      "hd95_boundaries": 6.104745
+    }
+  },
+  "LUNG1-369": {
+    "heart": {
+      "hd": 12.0,
+      "hd95": 2.649221,
+      "hd_boundaries": 12.0,
+      "hd95_boundaries": 12.0
+    },
+    "esophagus": {
+      "hd": 51.210762,
+      "hd95": 21.171329,
+      "hd_boundaries": 51.210762,
+      "hd95_boundaries": 24.117554
+    }
+  },
+  "LUNG1-370": {
+    "heart": {
+      "hd": 18.241854,
+      "hd95": 3.0,
+      "hd_boundaries": 27.0,
+      "hd95_boundaries": 12.869643
+    },
+    "esophagus": {
+      "hd": 15.407718,
+      "hd95": 6.355288,
+      "hd_boundaries": 15.407718,
+      "hd95_boundaries": 10.365391
+    }
+  },
+  "LUNG1-371": {
+    "heart": {
+      "hd": 36.0,
+      "hd95": 7.469267,
+      "hd_boundaries": 36.0,
+      "hd95_boundaries": 21.499887
+    },
+    "esophagus": {
+      "hd": 10.323367,
+      "hd95": 1.464844,
+      "hd_boundaries": 10.323367,
+      "hd95_boundaries": 2.59183
+    }
+  },
+  "LUNG1-372": {
+    "heart": {
+      "hd": 21.113228,
+      "hd95": 3.077472,
+      "hd_boundaries": 21.113228,
+      "hd95_boundaries": 12.393263
+    },
+    "esophagus": {
+      "hd": 23.241819,
+      "hd95": 9.976562,
+      "hd_boundaries": 23.241819,
+      "hd95_boundaries": 11.888689
+    }
+  },
+  "LUNG1-373": {
+    "heart": {
+      "hd": 18.599573,
+      "hd95": 3.602615,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 11.498856
+    },
+    "esophagus": {
+      "hd": 9.095606,
+      "hd95": 2.881711,
+      "hd_boundaries": 9.095606,
+      "hd95_boundaries": 4.789881
+    }
+  },
+  "LUNG1-374": {
+    "heart": {
+      "hd": 24.892744,
+      "hd95": 6.0,
+      "hd_boundaries": 24.892744,
+      "hd95_boundaries": 21.0
+    },
+    "esophagus": {
+      "hd": 12.0,
+      "hd95": 2.476562,
+      "hd_boundaries": 12.0,
+      "hd95_boundaries": 5.152716
+    }
+  },
+  "LUNG1-375": {
+    "heart": {
+      "hd": 23.476828,
+      "hd95": 3.163432,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 12.098532
+    },
+    "esophagus": {
+      "hd": 19.433224,
+      "hd95": 5.489253,
+      "hd_boundaries": 19.433224,
+      "hd95_boundaries": 8.281878
+    }
+  },
+  "LUNG1-376": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 5.958925,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 18.026451
+    },
+    "esophagus": {
+      "hd": 28.654743,
+      "hd95": 11.739022,
+      "hd_boundaries": 28.654743,
+      "hd95_boundaries": 13.729908
+    }
+  },
+  "LUNG1-377": {
+    "heart": {
+      "hd": 26.935049,
+      "hd95": 4.5,
+      "hd_boundaries": 30.0,
+      "hd95_boundaries": 18.97456
+    },
+    "esophagus": {
+      "hd": 25.427778,
+      "hd95": 4.544081,
+      "hd_boundaries": 25.427778,
+      "hd95_boundaries": 7.477705
+    }
+  },
+  "LUNG1-378": {
+    "heart": {
+      "hd": 9.0,
+      "hd95": 0.488281,
+      "hd_boundaries": 9.0,
+      "hd95_boundaries": 6.039476
+    },
+    "esophagus": {
+      "hd": 7.627197,
+      "hd95": 1.178815,
+      "hd_boundaries": 7.627197,
+      "hd95_boundaries": 2.556674
+    }
+  },
+  "LUNG1-379": {
+    "heart": {
+      "hd": 27.0,
+      "hd95": 4.5,
+      "hd_boundaries": 27.0,
+      "hd95_boundaries": 19.332067
+    },
+    "esophagus": {
+      "hd": 18.833473,
+      "hd95": 6.001731,
+      "hd_boundaries": 18.833473,
+      "hd95_boundaries": 7.597308
+    }
+  },
+  "LUNG1-380": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 3.0,
+      "hd_boundaries": 21.0,
+      "hd95_boundaries": 16.074766
+    },
+    "esophagus": {
+      "hd": 24.196978,
+      "hd95": 6.360579,
+      "hd_boundaries": 24.196978,
+      "hd95_boundaries": 8.126932
+    }
+  },
+  "LUNG1-381": {
+    "heart": {
+      "hd": 18.470684,
+      "hd95": 6.867876,
+      "hd_boundaries": 32.808987,
+      "hd95_boundaries": 16.458925
+    },
+    "esophagus": {
+      "hd": 14.648273,
+      "hd95": 4.464844,
+      "hd_boundaries": 14.648273,
+      "hd95_boundaries": 6.289881
+    }
+  },
+  "LUNG1-382": {
+    "heart": {
+      "hd": 24.315813,
+      "hd95": 7.5,
+      "hd_boundaries": 24.315813,
+      "hd95_boundaries": 21.459045
+    },
+    "esophagus": {
+      "hd": 19.155035,
+      "hd95": 4.5,
+      "hd_boundaries": 19.155035,
+      "hd95_boundaries": 7.484679
+    }
+  },
+  "LUNG1-383": {
+    "heart": {
+      "hd": 19.917925,
+      "hd95": 2.852353,
+      "hd_boundaries": 19.917925,
+      "hd95_boundaries": 10.975943
+    },
+    "esophagus": {
+      "hd": 31.695612,
+      "hd95": 9.488281,
+      "hd_boundaries": 31.695612,
+      "hd95_boundaries": 12.0
+    }
+  },
+  "LUNG1-384": {
+    "heart": {},
+    "esophagus": {
+      "hd": 72.666183,
+      "hd95": 32.1362,
+      "hd_boundaries": 72.666183,
+      "hd95_boundaries": 34.491119
+    }
+  },
+  "LUNG1-385": {
+    "heart": {
+      "hd": 30.027308,
+      "hd95": 3.291363,
+      "hd_boundaries": 30.027308,
+      "hd95_boundaries": 14.705231
+    },
+    "esophagus": {
+      "hd": 90.439056,
+      "hd95": 42.352802,
+      "hd_boundaries": 90.439056,
+      "hd95_boundaries": 44.766975
+    }
+  },
+  "LUNG1-386": {
+    "heart": {
+      "hd": 12.0,
+      "hd95": 2.476562,
+      "hd_boundaries": 12.0,
+      "hd95_boundaries": 12.0
+    },
+    "esophagus": {
+      "hd": 23.487032,
+      "hd95": 5.405795,
+      "hd_boundaries": 23.487032,
+      "hd95_boundaries": 7.501731
+    }
+  },
+  "LUNG1-387": {
+    "heart": {
+      "hd": 60.032425,
+      "hd95": 2.476562,
+      "hd_boundaries": 60.032425,
+      "hd95_boundaries": 9.0
+    },
+    "esophagus": {
+      "hd": 65.908089,
+      "hd95": 32.638535,
+      "hd_boundaries": 65.908089,
+      "hd95_boundaries": 33.964138
+    }
+  },
+  "LUNG1-388": {
+    "heart": {
+      "hd": 27.638529,
+      "hd95": 3.289881,
+      "hd_boundaries": 27.638529,
+      "hd95_boundaries": 11.574766
+    },
+    "esophagus": {
+      "hd": 16.42103,
+      "hd95": 2.476562,
+      "hd_boundaries": 16.42103,
+      "hd95_boundaries": 4.578447
+    }
+  },
+  "LUNG1-389": {
+    "heart": {
+      "hd": 12.0,
+      "hd95": 1.178815,
+      "hd_boundaries": 12.0,
+      "hd95_boundaries": 6.0
+    },
+    "esophagus": {
+      "hd": 19.159788,
+      "hd95": 7.363448,
+      "hd_boundaries": 19.159788,
+      "hd95_boundaries": 8.406177
+    }
+  },
+  "LUNG1-390": {
+    "heart": {
+      "hd": 51.819672,
+      "hd95": 9.0,
+      "hd_boundaries": 51.819672,
+      "hd95_boundaries": 26.737148
+    },
+    "esophagus": {
+      "hd": 15.774722,
+      "hd95": 3.643226,
+      "hd_boundaries": 15.774722,
+      "hd95_boundaries": 7.760523
+    }
+  },
+  "LUNG1-391": {
+    "heart": {
+      "hd": 30.888134,
+      "hd95": 1.5,
+      "hd_boundaries": 30.888134,
+      "hd95_boundaries": 9.0
+    },
+    "esophagus": {
+      "hd": 36.59119,
+      "hd95": 15.984508,
+      "hd_boundaries": 36.59119,
+      "hd95_boundaries": 18.129538
+    }
+  },
+  "LUNG1-392": {
+    "heart": {
+      "hd": 15.622851,
+      "hd95": 2.906696,
+      "hd_boundaries": 15.622851,
+      "hd95_boundaries": 12.720516
+    },
+    "esophagus": {
+      "hd": 36.02615,
+      "hd95": 4.616949,
+      "hd_boundaries": 36.02615,
+      "hd95_boundaries": 9.690651
+    }
+  },
+  "LUNG1-393": {
+    "heart": {
+      "hd": 30.0,
+      "hd95": 10.5,
+      "hd_boundaries": 30.0,
+      "hd95_boundaries": 27.89488
+    },
+    "esophagus": {
+      "hd": 15.031755,
+      "hd95": 5.476562,
+      "hd_boundaries": 15.031755,
+      "hd95_boundaries": 7.690919
+    }
+  },
+  "LUNG1-394": {
+    "heart": {
+      "hd": 14.680953,
+      "hd95": 1.760523,
+      "hd_boundaries": 14.680953,
+      "hd95_boundaries": 11.650886
+    },
+    "esophagus": {
+      "hd": 35.331184,
+      "hd95": 15.92576,
+      "hd_boundaries": 35.331184,
+      "hd95_boundaries": 19.487001
+    }
+  },
+  "LUNG1-395": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 3.764429,
+      "hd_boundaries": 45.0,
+      "hd95_boundaries": 17.161684
+    },
+    "esophagus": {
+      "hd": 20.668308,
+      "hd95": 9.422283,
+      "hd_boundaries": 20.668308,
+      "hd95_boundaries": 10.563311
+    }
+  },
+  "LUNG1-396": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 4.5,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 18.448427
+    },
+    "esophagus": {
+      "hd": 37.505016,
+      "hd95": 14.234848,
+      "hd_boundaries": 37.505016,
+      "hd95_boundaries": 15.936649
+    }
+  },
+  "LUNG1-397": {
+    "heart": {
+      "hd": 24.0,
+      "hd95": 3.488281,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 16.719906
+    },
+    "esophagus": {
+      "hd": 19.622313,
+      "hd95": 5.974643,
+      "hd_boundaries": 19.622313,
+      "hd95_boundaries": 7.597308
+    }
+  },
+  "LUNG1-398": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 2.501516,
+      "hd_boundaries": 15.0,
+      "hd95_boundaries": 15.0
+    },
+    "esophagus": {
+      "hd": 26.147989,
+      "hd95": 9.690534,
+      "hd_boundaries": 26.147989,
+      "hd95_boundaries": 12.122787
+    }
+  },
+  "LUNG1-399": {
+    "heart": {
+      "hd": 15.774722,
+      "hd95": 2.480415,
+      "hd_boundaries": 15.774722,
+      "hd95_boundaries": 15.0
+    },
+    "esophagus": {
+      "hd": 14.8082,
+      "hd95": 4.09183,
+      "hd_boundaries": 14.8082,
+      "hd95_boundaries": 6.052674
+    }
+  },
+  "LUNG1-400": {
+    "heart": {
+      "hd": 33.0,
+      "hd95": 9.54249,
+      "hd_boundaries": 33.0,
+      "hd95_boundaries": 25.793539
+    },
+    "esophagus": {
+      "hd": 45.0,
+      "hd95": 17.441406,
+      "hd_boundaries": 45.0,
+      "hd95_boundaries": 19.967731
+    }
+  },
+  "LUNG1-401": {
+    "heart": {
+      "hd": 18.0,
+      "hd95": 1.5,
+      "hd_boundaries": 18.0,
+      "hd95_boundaries": 12.0
+    },
+    "esophagus": {
+      "hd": 11.322954,
+      "hd95": 2.071602,
+      "hd_boundaries": 11.322954,
+      "hd95_boundaries": 3.077472
+    }
+  },
+  "LUNG1-402": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 1.988281,
+      "hd_boundaries": 15.0,
+      "hd95_boundaries": 8.32724
+    },
+    "esophagus": {
+      "hd": 17.79368,
+      "hd95": 4.509799,
+      "hd_boundaries": 17.79368,
+      "hd95_boundaries": 7.623034
+    }
+  },
+  "LUNG1-403": {
+    "heart": {
+      "hd": 19.646599,
+      "hd95": 3.14315,
+      "hd_boundaries": 32.106926,
+      "hd95_boundaries": 16.209387
+    },
+    "esophagus": {
+      "hd": 15.174071,
+      "hd95": 2.343569,
+      "hd_boundaries": 15.174071,
+      "hd95_boundaries": 4.5445
+    }
+  },
+  "LUNG1-404": {
+    "heart": {
+      "hd": 16.513138,
+      "hd95": 1.988281,
+      "hd_boundaries": 16.513138,
+      "hd95_boundaries": 12.0
+    },
+    "esophagus": {
+      "hd": 10.285695,
+      "hd95": 1.667096,
+      "hd_boundaries": 10.285695,
+      "hd95_boundaries": 3.151314
+    }
+  },
+  "LUNG1-405": {
+    "heart": {
+      "hd": 177.654984,
+      "hd95": 6.0,
+      "hd_boundaries": 177.654984,
+      "hd95_boundaries": 23.665209
+    },
+    "esophagus": {
+      "hd": 15.063444,
+      "hd95": 5.476562,
+      "hd_boundaries": 15.063444,
+      "hd95_boundaries": 6.913724
+    }
+  },
+  "LUNG1-406": {
+    "heart": {
+      "hd": 21.0,
+      "hd95": 6.0,
+      "hd_boundaries": 21.0,
+      "hd95_boundaries": 21.0
+    },
+    "esophagus": {
+      "hd": 24.949951,
+      "hd95": 9.488281,
+      "hd_boundaries": 24.949951,
+      "hd95_boundaries": 12.0
+    }
+  },
+  "LUNG1-407": {
+    "heart": {
+      "hd": 27.0,
+      "hd95": 7.5,
+      "hd_boundaries": 27.0,
+      "hd95_boundaries": 23.213707
+    },
+    "esophagus": {
+      "hd": 13.531468,
+      "hd95": 3.976562,
+      "hd_boundaries": 13.531468,
+      "hd95_boundaries": 6.365268
+    }
+  },
+  "LUNG1-408": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 3.0,
+      "hd_boundaries": 15.0,
+      "hd95_boundaries": 14.30863
+    },
+    "esophagus": {
+      "hd": 28.387581,
+      "hd95": 9.233118,
+      "hd_boundaries": 28.387581,
+      "hd95_boundaries": 11.835158
+    }
+  },
+  "LUNG1-409": {
+    "heart": {
+      "hd": 21.560192,
+      "hd95": 1.5,
+      "hd_boundaries": 21.560192,
+      "hd95_boundaries": 14.824219
+    },
+    "esophagus": {
+      "hd": 25.14406,
+      "hd95": 3.488281,
+      "hd_boundaries": 25.14406,
+      "hd95_boundaries": 7.381068
+    }
+  },
+  "LUNG1-410": {
+    "heart": {
+      "hd": 18.23686,
+      "hd95": 4.333032,
+      "hd_boundaries": 38.606953,
+      "hd95_boundaries": 16.929819
+    },
+    "esophagus": {
+      "hd": 21.560192,
+      "hd95": 8.479544,
+      "hd_boundaries": 21.560192,
+      "hd95_boundaries": 11.993463
+    }
+  },
+  "LUNG1-411": {
+    "heart": {
+      "hd": 27.903244,
+      "hd95": 7.109397,
+      "hd_boundaries": 29.194786,
+      "hd95_boundaries": 23.712772
+    },
+    "esophagus": {}
+  },
+  "LUNG1-412": {
+    "heart": {
+      "hd": 27.851931,
+      "hd95": 11.622598,
+      "hd_boundaries": 27.851931,
+      "hd95_boundaries": 21.480644
+    },
+    "esophagus": {
+      "hd": 6.835938,
+      "hd95": 1.178815,
+      "hd_boundaries": 6.835938,
+      "hd95_boundaries": 2.068393
+    }
+  },
+  "LUNG1-413": {
+    "heart": {
+      "hd": 31.165003,
+      "hd95": 6.386886,
+      "hd_boundaries": 31.165003,
+      "hd95_boundaries": 20.488964
+    },
+    "esophagus": {
+      "hd": 14.984339,
+      "hd95": 4.917969,
+      "hd_boundaries": 14.984339,
+      "hd95_boundaries": 6.165868
+    }
+  },
+  "LUNG1-414": {
+    "heart": {
+      "hd": 22.342205,
+      "hd95": 3.467731,
+      "hd_boundaries": 33.0,
+      "hd95_boundaries": 15.599443
+    },
+    "esophagus": {
+      "hd": 18.23686,
+      "hd95": 7.936749,
+      "hd_boundaries": 18.23686,
+      "hd95_boundaries": 10.131468
+    }
+  },
+  "LUNG1-415": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 3.488281,
+      "hd_boundaries": 15.0,
+      "hd95_boundaries": 15.0
+    },
+    "esophagus": {
+      "hd": 20.617699,
+      "hd95": 4.194673,
+      "hd_boundaries": 20.617699,
+      "hd95_boundaries": 6.453941
+    }
+  },
+  "LUNG1-416": {
+    "heart": {
+      "hd": 13.496183,
+      "hd95": 1.5,
+      "hd_boundaries": 17.893991,
+      "hd95_boundaries": 9.893243
+    },
+    "esophagus": {
+      "hd": 7.465256,
+      "hd95": 2.964844,
+      "hd_boundaries": 7.465256,
+      "hd95_boundaries": 3.890358
+    }
+  },
+  "LUNG1-417": {
+    "heart": {
+      "hd": 16.103796,
+      "hd95": 1.5,
+      "hd_boundaries": 16.103796,
+      "hd95_boundaries": 6.989253
+    },
+    "esophagus": {
+      "hd": 10.980887,
+      "hd95": 1.178815,
+      "hd_boundaries": 10.980887,
+      "hd95_boundaries": 3.355288
+    }
+  },
+  "LUNG1-418": {
+    "heart": {
+      "hd": 15.0,
+      "hd95": 3.812886,
+      "hd_boundaries": 17.535679,
+      "hd95_boundaries": 11.037519
+    },
+    "esophagus": {
+      "hd": 5.298442,
+      "hd95": 1.667096,
+      "hd_boundaries": 5.298442,
+      "hd95_boundaries": 2.964844
+    }
+  },
+  "LUNG1-419": {
+    "heart": {
+      "hd": 36.61018,
+      "hd95": 5.295279,
+      "hd_boundaries": 36.61018,
+      "hd95_boundaries": 15.314912
+    },
+    "esophagus": {}
+  },
+  "LUNG1-420": {
+    "heart": {
+      "hd": 22.026596,
+      "hd95": 3.374046,
+      "hd_boundaries": 24.0,
+      "hd95_boundaries": 14.401001
+    },
+    "esophagus": {
+      "hd": 13.282686,
+      "hd95": 2.441406,
+      "hd_boundaries": 13.282686,
+      "hd95_boundaries": 4.637025
+    }
+  },
+  "LUNG1-421": {
+    "heart": {
+      "hd": 18.0,
+      "hd95": 3.0,
+      "hd_boundaries": 18.0,
+      "hd95_boundaries": 13.340374
+    },
+    "esophagus": {
+      "hd": 10.239231,
+      "hd95": 3.488281,
+      "hd_boundaries": 10.239231,
+      "hd95_boundaries": 5.390841
+    }
+  },
+  "LUNG1-422": {
+    "heart": {
+      "hd": 9.052827,
+      "hd95": 1.580111,
+      "hd_boundaries": 9.052827,
+      "hd95_boundaries": 6.0
+    },
+    "esophagus": {
+      "hd": 9.689015,
+      "hd95": 3.151314,
+      "hd_boundaries": 9.689015,
+      "hd95_boundaries": 3.640689
+    }
+  }
+}
