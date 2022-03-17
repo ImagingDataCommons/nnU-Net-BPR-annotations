@@ -54,7 +54,7 @@ def download_patient_data(raw_base_path, sorted_base_path,
   bash_command = list()
   bash_command = ["gsutil", "-q", "-m", "cp", "-Ir", "%s"%download_path]
 
-  output = subprocess.check_output(('grep', 'process_name'), stdin = ps.stdout)
+  output = subprocess.check_output(bash_command, stdin = ps.stdout)
   ps.wait()
 
   subprocess.run(bash_command, check = True, text = True)
