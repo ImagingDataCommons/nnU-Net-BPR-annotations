@@ -12,7 +12,7 @@
 """
 
 import os
-import shutil
+import subprocess
 
 import numpy as np
 import SimpleITK as sitk
@@ -177,6 +177,7 @@ def nrrd_to_dicomseg(sorted_base_path, processed_base_path,
 
   path_to_ct_dir = os.path.join(sorted_base_path, pat_id, "CT")
 
+  processed_nrrd_path = os.path.join(processed_base_path, "nrrd")
   processed_dicomseg_path = os.path.join(processed_base_path, "dicomseg")
   pat_dir_dicomseg_path = os.path.join(processed_dicomseg_path, pat_id)
 
