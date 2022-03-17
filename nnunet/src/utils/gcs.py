@@ -59,7 +59,7 @@ def download_patient_data(raw_base_path, sorted_base_path,
 
   bash_command = list()
   bash_command += ["python", "../dicomsort/dicomsort.py", "-u",
-                   "%s"%download_path, "%s/%PatientID/%Modality/%SOPInstanceUID.dcm"%sorted_base_path]
+                   "%s"%download_path, "%s/%%PatientID/%%Modality/%%SOPInstanceUID.dcm"%sorted_base_path]
 
   elapsed = time.time() - start_time
   print("Done in %g seconds."%elapsed)
