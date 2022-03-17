@@ -1,6 +1,6 @@
 """
     ----------------------------------------
-    IDC-MedImA-misc - GCS utils
+    IDC-MedImA-misc - preprocessing utils
     ----------------------------------------
     
     ----------------------------------------
@@ -12,7 +12,7 @@
 
 import os
 import sys
-sys.path.append([".."])
+sys.path.append(["../"])
 
 def pypla_dicom_ct_to_nrrd(sorted_base_path, processed_nrrd_path,
                            pat_id, verbose = True):
