@@ -54,10 +54,8 @@ def download_patient_data(raw_base_path, sorted_base_path,
   bash_command = list()
   bash_command = ["gsutil", "-q", "-m", "cp", "-Ir", "%s"%download_path]
 
-  output = subprocess.check_output(bash_command, stdin = ps.stdout)
+  bash_return = subprocess.check_output(bash_command, stdin = ps.stdout)
   ps.wait()
-
-  subprocess.run(bash_command, check = True, text = True)
 
   elapsed = time.time() - start_time
   print("Done in %g seconds."%elapsed)
@@ -68,6 +66,8 @@ def download_patient_data(raw_base_path, sorted_base_path,
   bash_command = list()
   bash_command += ["python", "../dicomsort/dicomsort.py", "-u",
                    "%s"%download_path, "%s/%%PatientID/%%Modality/%%SOPInstanceUID.dcm"%sorted_base_path]
+
+  bash_return = subprocess.run(bash_command, check = True, text = True)
 
   elapsed = time.time() - start_time
   print("Done in %g seconds."%elapsed)
