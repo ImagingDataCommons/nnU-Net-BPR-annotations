@@ -1,0 +1,6 @@
+[submodule "nnunet/src/dicomsort"]
+	path = nnunet/src/dicomsort
+	url = https://github.com/pieper/dicomsort
+[submodule "nnunet/src/pyplastimatch"]
+	path = nnunet/src/pyplastimatch
+	url = https://github.com/AIM-Harvard/pyplastimatch
