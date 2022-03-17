@@ -1,6 +1,6 @@
 """
     ----------------------------------------
-    IDC-MedImA-misc - preprocessing utils
+    IDC-MedImA-misc - pre-processing utils
     ----------------------------------------
     
     ----------------------------------------
@@ -13,6 +13,7 @@
 import os
 import shutil
 import src.pyplastimatch.pyplastimatch.pyplastimatch as pypla
+
 
 def pypla_dicom_ct_to_nrrd(sorted_base_path, processed_nrrd_path,
                            pat_id, verbose = True):

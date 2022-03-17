@@ -15,6 +15,9 @@ import time
 import shutil
 import subprocess
 
+from google.cloud import storage
+
+
 def download_patient_data(raw_base_path, sorted_base_path,
                           patient_df, remove_raw = True):
 
@@ -79,3 +82,73 @@ def download_patient_data(raw_base_path, sorted_base_path,
     print("Removing un-sorted data at %s..."%(download_path))
     shutil.rmtree(download_path) 
     print("... Done.")
+
+# ----------------------------------
+# ----------------------------------
+
+def file_exists_in_bucket(project_name, bucket_name, file_gs_uri):
+  
+  """
+  Check whether a file exists in the specified Google Cloud Storage Bucket.
+
+  Arguments:
+    project_name : required - name of the GCP project.
+    bucket_name  : required - name of the bucket (without gs://)
+    file_gs_uri  : required - file GS URI
+  
+  Returns:
+    file_exists : boolean variable, True if the file exists in the specified,
+                  bucket, at the specified location; False if it doesn't.
+
+  Outputs:
+    This function [...]
+  """
+
+  storage_client = storage.Client(project = project_name)
+  bucket = storage_client.get_bucket(bucket_name)
+  
+  bucket_gs_url = "gs://%s/"%(bucket_name)
+  path_to_file_relative = file_gs_uri.split(bucket_gs_url)[-1]
+
+  print("Searching `%s` for: \n%s\n"%(bucket_gs_url, path_to_file_relative))
+
+  file_exists = bucket.blob(path_to_file_relative).exists(storage_client)
+
+  return file_exists
+
+# ----------------------------------
+# ----------------------------------
+
+def listdir_bucket(project_name, bucket_name, dir_gs_uri):
+  
+  """
+  Export DICOM SEG object from segmentation masks stored in NRRD files.
+
+  Arguments:
+    project_name : required - name of the GCP project.
+    bucket_name  : required - name of the bucket (without gs://)
+    file_gs_uri  : required - directory GS URI
+  
+  Returns:
+    file_list : list of files in the specified GCS bucket.
+
+  Outputs:
+    This function [...]
+  """
+
+  storage_client = storage.Client(project = project_name)
+  bucket = storage_client.get_bucket(bucket_name)
+  
+  bucket_gs_url = "gs://%s/"%(bucket_name)
+  path_to_dir_relative = dir_gs_uri.split(bucket_gs_url)[-1]
+
+
+  print("Getting the list of files at `%s`..."%(dir_gs_uri))
+
+  file_list = list()
+
+  for blob in storage_client.list_blobs(bucket_name,  prefix = path_to_dir_relative):
+    fn = os.path.basename(blob.name)
+    file_list.append(fn)
+
+  return file_list
