@@ -1,2 +1,3 @@
-# idc-medima-paper
-Repository for all the code for the MedImA use case paper
+# idc-medima-misc
+
+IDC MedImA miscellaneous.
