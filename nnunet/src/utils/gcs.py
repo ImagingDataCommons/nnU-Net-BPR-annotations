@@ -47,7 +47,15 @@ def download_patient_data(raw_base_path, sorted_base_path,
   print("Copying files from IDC buckets to %s..."%(download_path))
 
   bash_command = list()
-  bash_command += ["cat", "%s"%gs_file_path, "|", "gsutil", "-q", "-m", "cp", "-Ir", "%s"%download_path]
+  bash_command += ["cat", "%s"%gs_file_path]
+
+  ps = subprocess.Popen(bash_command, stdout = subprocess.PIPE)
+
+  bash_command = list()
+  bash_command = ["gsutil", "-q", "-m", "cp", "-Ir", "%s"%download_path]
+
+  output = subprocess.check_output(('grep', 'process_name'), stdin = ps.stdout)
+  ps.wait()
 
   subprocess.run(bash_command, check = True, text = True)
 
