@@ -66,8 +66,9 @@ def download_patient_data(raw_base_path, sorted_base_path,
   start_time = time.time()
   print("\nSorting DICOM files..." )
 
+  # 
   bash_command = list()
-  bash_command += ["python", "src/dicomsort/dicomsort.py", "-u",
+  bash_command += ["python", "src/dicomsort/dicomsort.py", "-k", "-u",
                    "%s"%download_path, "%s/%%PatientID/%%Modality/%%SOPInstanceUID.dcm"%sorted_base_path]
 
   bash_return = subprocess.run(bash_command, check = True, text = True)

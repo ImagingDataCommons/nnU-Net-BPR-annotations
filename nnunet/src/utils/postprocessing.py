@@ -12,7 +12,10 @@
 """
 
 import os
+import shutil
 import subprocess
+
+import json
 
 import numpy as np
 import SimpleITK as sitk
@@ -199,3 +202,58 @@ def nrrd_to_dicomseg(sorted_base_path, processed_base_path,
     bash_command += ["--skip"]
 
   bash_return = subprocess.run(bash_command, check = True, text = True)
+
+
+# ----------------------------------
+# ----------------------------------
+
+def dicomseg_to_nrrd(path_to_dicomseg_file, path_to_output_dir, rename_nrrd = True):
+
+  """
+  Export NRRD segmentation mask files from DICOM SEG object.
+
+  Arguments:
+    path_to_dicomseg_file : required - ...
+    path_to_output_dir    : required - ...
+    rename_nrrd           : required - whether to rename the output NRRDs based on
+                                       the information stored in the meta.json file or not.
+                                       Defaults to True.
+
+  Outputs:
+    This function [...]
+  """
+
+  bash_command = list()
+  bash_command += ["segimage2itkimage"]
+  bash_command += ["--outputType", "nrrd"]
+  bash_command += ["--outputDirectory", "%s"%path_to_output_dir]
+  bash_command += ["--inputDICOM", "%s"%path_to_dicomseg_file]
+
+  bash_return = subprocess.run(bash_command, check = True, text = True)
+
+  if rename_nrrd == True:
+    path_to_metadata_json = os.path.join(path_to_output_dir, "meta.json")
+
+    with open(path_to_metadata_json, "r") as fp:
+      meta_dict = json.load(fp)
+
+    structures_list = list()
+
+    structures_list = [attr_list[0]["SegmentLabel"] for attr_list in meta_dict["segmentAttributes"]]
+    
+    print("Structures mapped in the JSON metadata file at %s:\n"%(path_to_metadata_json), structures_list)
+
+    mapping_dict = {"%g.nrrd"%(idx + 1) : "%s.nrrd"%(structures_list[idx]) for idx in range(len(structures_list))}
+
+    # rename according to the information in the JSON metadata file
+    for fn in mapping_dict:
+      path_to_file = os.path.join(path_to_output_dir, fn)
+      path_to_file_new = os.path.join(path_to_output_dir, mapping_dict[fn])
+
+      print("Renaming '%s' to '%s'..."%(fn, mapping_dict[fn]))
+
+      shutil.move(path_to_file, path_to_file_new)
+
+
+# ----------------------------------
+# ----------------------------------
