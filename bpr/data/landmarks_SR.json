@@ -1,0 +1,393 @@
+{
+	"CompletionFlag" : "COMPLETE",
+	"InstanceNumber" : "1",
+	"Measurements" : 
+	[
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "L1",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "lung_start",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th12",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th11",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th10",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th9",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "liver_end",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th8",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th7",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th6",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th5",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th4",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th3",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th2",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "lung_end",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		},
+		{
+			"TrackingIdentifier" : "Annotations group landmarks",
+			"TrackingUniqueIdentifier" : "1.2.826.0.1.3680043.8.498.55035005915165648561315187792570015238",
+			"measurementItems" : [],
+			"qualitativeEvaluations" : 
+			[
+				{
+					"conceptCode" : 
+					{
+						"CodeMeaning" : "Landmark",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					},
+					"conceptValue" : 
+					{
+						"CodeMeaning" : "Th1",
+						"CodeValue" : "99TEST",
+						"CodingSchemeDesignator" : "99TEST"
+					}
+				}
+			]
+		}
+	],
+	"SeriesDescription" : "",
+	"SeriesNumber" : "101",
+	"VerificationFlag" : "UNVERIFIED",
+	"imageLibrary" : 
+	[
+		"1.2.840.113654.2.55.68415801689274003837295087404634373405",
+		"1.2.840.113654.2.55.338334348955426591993090843896050935439",
+		"1.2.840.113654.2.55.92392305777572991264669290354976677479",
+		"1.2.840.113654.2.55.116271389116537631158078471836664246117",
+		"1.2.840.113654.2.55.183467606293113814646723960939446512565",
+		"1.2.840.113654.2.55.211911455406659521772413352187413284884",
+		"1.2.840.113654.2.55.92276072632898045315951839840119350856",
+		"1.2.840.113654.2.55.92704304581571405247084015761583032700",
+		"1.2.840.113654.2.55.176563896792837713726282617309869277207",
+		"1.2.840.113654.2.55.116110614591075435777409024499122956433",
+		"1.2.840.113654.2.55.126771657705281046375243757990399669755",
+		"1.2.840.113654.2.55.97123361040258371061793230301158336209",
+		"1.2.840.113654.2.55.179944780352808885032744134132746215982",
+		"1.2.840.113654.2.55.139957267308307501225294826880824033632",
+		"1.2.840.113654.2.55.267700051749771649086366136891834197504",
+		"1.2.840.113654.2.55.225059302175959134719588388456180317400"
+	],
+	"observerContext" : 
+	{
+		"DeviceObserverName" : "BodyPartRegression_landmarks",
+		"DeviceObserverUID" : "1.2.826.0.1.3680043.8.498.89174772813073239784941955129060337933",
+		"ObserverType" : "DEVICE"
+	},
+	"procedureReported" : 
+	{
+		"CodeMeaning" : "Imaging procedure",
+		"CodeValue" : "363679005",
+		"CodingSchemeDesignator" : "SCT"
+	}
+}
