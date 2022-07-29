@@ -1,0 +1,959 @@
+{
+  "@schema": "https://raw.githubusercontent.com/qiicr/dcmqi/master/doc/schemas/sr-tid1500-schema.json#",
+  "SeriesDescription": "Measurements",
+  "SeriesNumber": "1001",
+  "InstanceNumber": "1",
+  "compositeContext": [
+    "/content/seg/seg.dcm"
+  ],
+  "imageLibrary": [
+    "93aed4a2-52c2-4b21-9c08-78c0c7f39d9b.dcm",
+    "bfab91a7-d344-4de2-9343-c8dfffecaef0.dcm",
+    "893f4680-db77-4af6-bd34-e21bc2ea43bf.dcm",
+    "feb05d2d-c10e-4f10-8a6f-e8caf18f53d1.dcm",
+    "7dc6a909-52c0-4e01-b733-55f387a5b674.dcm",
+    "a946071a-73be-47e5-a8d9-ea6f334e49a3.dcm",
+    "9c0f5af8-c740-4463-90aa-b01f88d58a2c.dcm",
+    "2e59fa98-83e5-465a-98d0-11b46207fd52.dcm",
+    "e7ea8e56-70b7-4808-9782-46e3a3fec499.dcm",
+    "55fb1ee4-36cd-465a-830b-1f7fb66261b1.dcm",
+    "ff5933a4-aa0b-4dee-bf33-a296d8073431.dcm",
+    "49072ffd-8601-4616-8494-294831f611cc.dcm",
+    "1de217b1-2bac-432e-8b36-5897a5dbad3f.dcm",
+    "6745903b-91f9-467a-9212-fa95fe7830f6.dcm",
+    "122a4bab-8511-467e-bcc6-ddbdd81b4a29.dcm",
+    "0a7c464b-f11b-400d-8338-ba566af03159.dcm",
+    "ab15b196-eaaa-4201-a2b0-52a3d5609564.dcm",
+    "00cbda39-70b3-4fe8-bb64-951becf742ea.dcm",
+    "9c01127d-dcdd-43c0-a846-9394c47e4c66.dcm",
+    "fdab89cd-74f3-4db5-9e80-288d90d7bce9.dcm",
+    "d44aa866-9b92-49bd-9018-f9545cbb14ce.dcm",
+    "c2008c91-15d5-4d25-9e33-80f3f235d653.dcm",
+    "824c6ef6-fbc5-4aeb-9f78-ecdefc4b9194.dcm",
+    "c5ee50dc-7a73-4cf2-8e3d-ff03921fe9ac.dcm",
+    "567da5b4-ac4c-46b9-8ffc-79abc1ede204.dcm",
+    "59eeb3cd-e41f-46ed-a3a3-95de5dc17dc9.dcm",
+    "4bdfd435-8546-4004-9cdb-5037b359e782.dcm",
+    "7ecf95e5-7e6b-4acc-b6e0-7a4b8493fc35.dcm",
+    "2ad9a15f-25cd-4d71-b143-d931198d320e.dcm",
+    "4688ee1e-bf13-4a77-9ae5-5e20b11e31db.dcm",
+    "8b06723a-9e69-4f70-8006-7ec9f80ca420.dcm",
+    "12673e51-81f5-46fe-8c61-7e08d5970def.dcm",
+    "b47a76c8-6a0d-4d03-9e1d-409e843cac23.dcm",
+    "e13dcb8e-2053-4912-b909-0ac1a8638214.dcm",
+    "f7eece73-e0b8-43b3-8ae2-6c6223cea4b2.dcm",
+    "6af17abb-61a4-45a9-86e1-4d1cddc61dee.dcm",
+    "b4889e68-d0e2-4d97-835d-3909afb641f6.dcm",
+    "4f558029-48d0-4e1e-95a4-84cf12fbbb51.dcm",
+    "b1784c83-b570-438f-afec-6d71d715cda3.dcm",
+    "1fb6a935-ddf3-4566-b3ea-27b32474739a.dcm",
+    "2c7a2687-0283-45a3-8876-337c0b392abe.dcm",
+    "3ffa50fb-3293-426f-b490-a365681ff06f.dcm",
+    "a9bbf37e-35f4-40ca-abff-73d986965075.dcm",
+    "40c5754d-abf8-4758-b207-ab991788a451.dcm",
+    "ebb1379a-c975-46e0-ada1-fb946bdb4a85.dcm",
+    "545adc19-6bf4-44cb-a32c-9b0d5e7200d4.dcm",
+    "2792679a-01c3-4a06-832a-d95f0fc60ff3.dcm",
+    "370bd5e4-bb80-4dd5-8404-74e3a4674885.dcm",
+    "5deb11ca-d93a-4bb2-bd13-3a95ac7fe302.dcm",
+    "35ade563-b8d7-4032-9124-6dd0543bc88d.dcm",
+    "9384cbff-e301-42bd-8b6e-38d0af4027a4.dcm",
+    "7d5fda81-0a40-46e4-b77f-1902b9679839.dcm",
+    "0aebbcea-23a0-4ee9-a08e-a9c2bea5beee.dcm",
+    "03778b89-6266-4f3e-a06f-47558a7f6a34.dcm",
+    "c6a2d04c-a7bd-478a-81e4-066a9a570f2b.dcm",
+    "e5a62633-26c5-4159-89fd-9f0d9d89b650.dcm",
+    "13556f06-3aa4-4e59-aa51-88841957ee31.dcm",
+    "20c8b28a-8752-4d29-b656-5d46cef56d4c.dcm",
+    "bc4f581b-703b-439b-887b-45ff77eb58a4.dcm",
+    "b6fbb597-d380-4ab6-8596-832ff6706a10.dcm",
+    "40ff0749-fd4c-424b-8647-2a490ee2a7f3.dcm",
+    "10ae24d8-4b83-4dc9-823e-44f4adb65ab5.dcm",
+    "eb62fe99-92cf-41bd-b01a-05cc6a2204ea.dcm",
+    "1e020195-0f20-4578-aa52-960c74dbf896.dcm",
+    "f9b564df-4d16-41c4-8215-437cdbbcd120.dcm",
+    "034a756d-b5f0-44e7-88a4-e96a5ceb651e.dcm",
+    "a1f86325-13b5-46ef-8bb4-3f6e657f70f1.dcm",
+    "284c26e8-9699-4ba3-91d0-a9253f21e003.dcm",
+    "d6ca9a09-1d9b-4420-ad78-40f1eb15a650.dcm",
+    "f6ba09b4-6dc8-4970-a88f-75dce8fd905c.dcm",
+    "e6c2134c-864c-4a7a-8392-f5365602d9ab.dcm",
+    "8d094f77-50ee-4bca-b157-57947b9fcffe.dcm",
+    "73640dd7-0689-4e44-8f84-3363179eebb8.dcm",
+    "1f5e10a2-b861-4d34-becf-9105a0d906dc.dcm",
+    "81d2aa91-0a16-4be3-b959-dc88b45937f0.dcm",
+    "c49b6646-a602-4531-b244-79000e3a830a.dcm",
+    "d942ee61-4034-40ce-8e22-d027e8a3a24a.dcm",
+    "4e45a2b0-6e73-418b-8060-21cfff42ada4.dcm",
+    "55173384-aeff-4b5b-8b4b-4356e56998b2.dcm",
+    "bc35ba66-a217-4307-ac41-8e516d337fc9.dcm",
+    "69b0f3ce-a859-4f53-b422-af9ff9aa77e9.dcm",
+    "6019ba8e-fbb7-41f7-be21-61cfc2055292.dcm",
+    "f12c30d8-141a-4fe7-87c4-bc7ee8b4b9e8.dcm",
+    "441718cb-c022-4879-bdc9-f26e4a1bc61e.dcm",
+    "ae15ea78-08ae-4b57-9f02-b77bec14dd85.dcm",
+    "ef31e662-2126-497f-a647-11fc2a66ef42.dcm",
+    "1a310e82-2ab3-48cb-bc9a-2c83ad206515.dcm",
+    "379651f2-5484-426b-b1be-a63cdc7860a9.dcm",
+    "222eb4fe-5d4f-4e7d-9e3e-e5c1aef17a07.dcm",
+    "9415232e-1c08-4d85-be3c-08f2dd854679.dcm",
+    "444981a7-d041-4cbd-b697-825fa6a9005e.dcm",
+    "6d978012-3f27-46f2-aca6-09f2c32a10a8.dcm",
+    "638e9439-e4fa-41e9-b9ec-e5e00541f01f.dcm",
+    "0932d9f6-3e44-4b97-b042-ba908e839593.dcm",
+    "85693c88-3aac-4474-87d9-5ff20e04d79a.dcm",
+    "997eceba-fd0a-4996-ac5a-439d18819b36.dcm",
+    "67bf3127-8222-4280-9d44-c32729a09e09.dcm",
+    "212673ae-713c-4674-b574-30a0abf2b805.dcm",
+    "2abc4da8-e58e-4acd-ae93-8f165c0cd3b1.dcm",
+    "277d0d74-3fc9-4a96-9c83-cddfe4429dbb.dcm",
+    "9b024787-676b-4afb-9220-35adcb1b8a67.dcm",
+    "dd071a0b-5120-4fb1-ac26-5162408809a6.dcm",
+    "eaaef188-8502-4a67-9487-48fa968c3897.dcm",
+    "1e16a662-2044-4628-a9cc-53ddfe261764.dcm",
+    "10b1168a-e2a5-4781-9cb7-f78dbc0e0eed.dcm",
+    "638f034d-85a9-433e-ac1f-e8b310e1ba46.dcm",
+    "08944cba-5ae0-4331-aa90-b0af3e6afaf5.dcm",
+    "f2072547-b246-4ee0-895a-fd488bc7e9cc.dcm",
+    "343c82d8-1d5b-480e-a566-4e30175c4a50.dcm",
+    "fe59d5e9-53d9-4aee-8122-914340f92e44.dcm",
+    "52c67425-41f7-4393-9a2c-e216c9449273.dcm",
+    "7019a88c-006b-4a8f-a743-60f2fff5e9e3.dcm",
+    "a03c83fe-58b3-4f9d-a79e-66f3cc6bd18c.dcm",
+    "1b473c56-2e9c-49ff-b72e-a065059bf96f.dcm",
+    "4a7c7d9f-c4a9-4a9c-a005-e74e59243a3a.dcm",
+    "1a85bd56-87d9-43cf-8f54-d1626468aa6f.dcm",
+    "0e95374f-4925-40df-b675-7d256080f379.dcm",
+    "50ae2c9e-d1af-4768-a300-7db07470b63a.dcm",
+    "ba6d1551-2bb2-4d75-a934-28cbd2e9ca4d.dcm",
+    "d9189122-2914-4aa5-a162-ff66fc2c1d89.dcm",
+    "75c77bfa-5f9b-4887-bec3-d4e4b3491290.dcm",
+    "0ee9313a-f62f-45a9-88a9-44d8f03bccde.dcm",
+    "a32981bc-518b-49ca-8951-7307dca920a5.dcm",
+    "1b7a1b76-4664-48e1-853b-a975d0c9296a.dcm",
+    "164ae50d-af83-4c1c-929a-1afd5cd7e7f7.dcm",
+    "089a6d33-4a74-4a19-8102-744e1f348a81.dcm",
+    "9f9b5d65-0533-41f7-905e-e5342b511dd2.dcm",
+    "aff82f29-af0a-4ca2-bc28-25261e16aa85.dcm",
+    "37b9d6ed-d0da-491c-9bed-2414ba08d4c7.dcm",
+    "78cc3fbc-0a8d-4935-b763-cf5aac47843b.dcm",
+    "305471fb-bab2-4641-8291-9d602c79efec.dcm",
+    "bbff5da5-99d2-4f4b-be4b-5ecfbed012ab.dcm",
+    "7504b673-924d-4679-a6e2-8052aa8a770d.dcm",
+    "107234a9-06db-4656-bf84-94d21274183f.dcm",
+    "b689eab5-780e-4843-a8f5-185742447e20.dcm",
+    "39e8936b-c7f1-4239-a18c-ec5285512bf6.dcm",
+    "18fc4911-a843-485b-97d0-a3b90e873c78.dcm"
+  ],
+  "observerContext": {
+    "ObserverType": "DEVICE",
+    "DeviceObserverName": "pyradiomics",
+    "DeviceObserverModelName": "v3.0.1"
+  },
+  "VerificationFlag": "UNVERIFIED",
+  "CompletionFlag": "COMPLETE",
+  "activitySession": "1",
+  "timePoint": "1",
+  "Measurements": [
+    {
+      "TrackingIdentifier": "Measurements group 1",
+      "ReferencedSegment": 1,
+      "SourceSeriesForImageSegmentation": "1.2.840.113654.2.55.12125238596116745272895257883935337357",
+      "segmentationSOPInstanceUID": "1.2.276.0.7230010.3.1.4.481034752.3179.1658435957.525413",
+      "Finding": {
+        "CodeValue": "113343008",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Organ"
+      },
+      "FindingSite": {
+        "CodeValue": "32849002",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Esophagus"
+      },
+      "measurementItems": [
+        {
+          "value": "0.115",
+          "quantity": {
+            "CodeValue": "Q3CK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Elongation"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.054",
+          "quantity": {
+            "CodeValue": "N17B",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Flatness"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "17.826",
+          "quantity": {
+            "CodeValue": "7J51",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Least Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "329.348",
+          "quantity": {
+            "CodeValue": "TDIC",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Major Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "267.916",
+          "quantity": {
+            "CodeValue": "L0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Maximum 3D Diameter of a Mesh"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "54475.279",
+          "quantity": {
+            "CodeValue": "RNU0",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "37.937",
+          "quantity": {
+            "CodeValue": "P9VJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Minor Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.436",
+          "quantity": {
+            "CodeValue": "QCFX",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Sphericity"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "15951.273",
+          "quantity": {
+            "CodeValue": "C0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface Area of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm2",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "square millimeter"
+          }
+        },
+        {
+          "value": "0.293",
+          "quantity": {
+            "CodeValue": "2PR5",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface to Volume Ratio"
+          },
+          "units": {
+            "CodeValue": "/mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "per millimeter"
+          }
+        },
+        {
+          "value": "54599.854",
+          "quantity": {
+            "CodeValue": "YEKZ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume from Voxel Summation"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "0.015",
+          "quantity": {
+            "CodeValue": "SKGS",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 1"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "0.083",
+          "quantity": {
+            "CodeValue": "BQWJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 2"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "2.295",
+          "quantity": {
+            "CodeValue": "KRCK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Spherical Disproportion"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        }
+      ]
+    },
+    {
+      "TrackingIdentifier": "Measurements group 2",
+      "ReferencedSegment": 2,
+      "SourceSeriesForImageSegmentation": "1.2.840.113654.2.55.12125238596116745272895257883935337357",
+      "segmentationSOPInstanceUID": "1.2.276.0.7230010.3.1.4.481034752.3179.1658435957.525413",
+      "Finding": {
+        "CodeValue": "113343008",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Organ"
+      },
+      "FindingSite": {
+        "CodeValue": "80891009",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Heart"
+      },
+      "measurementItems": [
+        {
+          "value": "0.744",
+          "quantity": {
+            "CodeValue": "Q3CK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Elongation"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.629",
+          "quantity": {
+            "CodeValue": "N17B",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Flatness"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "80.267",
+          "quantity": {
+            "CodeValue": "7J51",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Least Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "127.672",
+          "quantity": {
+            "CodeValue": "TDIC",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Major Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "151.802",
+          "quantity": {
+            "CodeValue": "L0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Maximum 3D Diameter of a Mesh"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "685848.656",
+          "quantity": {
+            "CodeValue": "RNU0",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "95.021",
+          "quantity": {
+            "CodeValue": "P9VJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Minor Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.799",
+          "quantity": {
+            "CodeValue": "QCFX",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Sphericity"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "47095.39",
+          "quantity": {
+            "CodeValue": "C0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface Area of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm2",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "square millimeter"
+          }
+        },
+        {
+          "value": "0.069",
+          "quantity": {
+            "CodeValue": "2PR5",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface to Volume Ratio"
+          },
+          "units": {
+            "CodeValue": "/mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "per millimeter"
+          }
+        },
+        {
+          "value": "686060.211",
+          "quantity": {
+            "CodeValue": "YEKZ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume from Voxel Summation"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "0.038",
+          "quantity": {
+            "CodeValue": "SKGS",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 1"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "0.509",
+          "quantity": {
+            "CodeValue": "BQWJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 2"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "1.252",
+          "quantity": {
+            "CodeValue": "KRCK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Spherical Disproportion"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        }
+      ]
+    },
+    {
+      "TrackingIdentifier": "Measurements group 3",
+      "ReferencedSegment": 3,
+      "SourceSeriesForImageSegmentation": "1.2.840.113654.2.55.12125238596116745272895257883935337357",
+      "segmentationSOPInstanceUID": "1.2.276.0.7230010.3.1.4.481034752.3179.1658435957.525413",
+      "Finding": {
+        "CodeValue": "113343008",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Organ"
+      },
+      "FindingSite": {
+        "CodeValue": "44567001",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Trachea"
+      },
+      "measurementItems": [
+        {
+          "value": "0.232",
+          "quantity": {
+            "CodeValue": "Q3CK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Elongation"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.133",
+          "quantity": {
+            "CodeValue": "N17B",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Flatness"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "22.725",
+          "quantity": {
+            "CodeValue": "7J51",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Least Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "171.205",
+          "quantity": {
+            "CodeValue": "TDIC",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Major Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "156.443",
+          "quantity": {
+            "CodeValue": "L0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Maximum 3D Diameter of a Mesh"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "56717.571",
+          "quantity": {
+            "CodeValue": "RNU0",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "39.655",
+          "quantity": {
+            "CodeValue": "P9VJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Minor Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.516",
+          "quantity": {
+            "CodeValue": "QCFX",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Sphericity"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "13839.782",
+          "quantity": {
+            "CodeValue": "C0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface Area of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm2",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "square millimeter"
+          }
+        },
+        {
+          "value": "0.244",
+          "quantity": {
+            "CodeValue": "2PR5",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface to Volume Ratio"
+          },
+          "units": {
+            "CodeValue": "/mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "per millimeter"
+          }
+        },
+        {
+          "value": "56839.417",
+          "quantity": {
+            "CodeValue": "YEKZ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume from Voxel Summation"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "0.02",
+          "quantity": {
+            "CodeValue": "SKGS",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 1"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "0.137",
+          "quantity": {
+            "CodeValue": "BQWJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 2"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "1.939",
+          "quantity": {
+            "CodeValue": "KRCK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Spherical Disproportion"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        }
+      ]
+    },
+    {
+      "TrackingIdentifier": "Measurements group 4",
+      "ReferencedSegment": 4,
+      "SourceSeriesForImageSegmentation": "1.2.840.113654.2.55.12125238596116745272895257883935337357",
+      "segmentationSOPInstanceUID": "1.2.276.0.7230010.3.1.4.481034752.3179.1658435957.525413",
+      "Finding": {
+        "CodeValue": "113343008",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Organ"
+      },
+      "FindingSite": {
+        "CodeValue": "15825003",
+        "CodingSchemeDesignator": "SCT",
+        "CodeMeaning": "Aorta"
+      },
+      "measurementItems": [
+        {
+          "value": "0.436",
+          "quantity": {
+            "CodeValue": "Q3CK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Elongation"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.119",
+          "quantity": {
+            "CodeValue": "N17B",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Flatness"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "31.464",
+          "quantity": {
+            "CodeValue": "7J51",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Least Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "264.424",
+          "quantity": {
+            "CodeValue": "TDIC",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Major Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "239.454",
+          "quantity": {
+            "CodeValue": "L0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Maximum 3D Diameter of a Mesh"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "169485.449",
+          "quantity": {
+            "CodeValue": "RNU0",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "115.378",
+          "quantity": {
+            "CodeValue": "P9VJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Minor Axis in 3D Length"
+          },
+          "units": {
+            "CodeValue": "mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "millimeter"
+          }
+        },
+        {
+          "value": "0.483",
+          "quantity": {
+            "CodeValue": "QCFX",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Sphericity"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "30643.316",
+          "quantity": {
+            "CodeValue": "C0JK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface Area of Mesh"
+          },
+          "units": {
+            "CodeValue": "mm2",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "square millimeter"
+          }
+        },
+        {
+          "value": "0.181",
+          "quantity": {
+            "CodeValue": "2PR5",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Surface to Volume Ratio"
+          },
+          "units": {
+            "CodeValue": "/mm",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "per millimeter"
+          }
+        },
+        {
+          "value": "169665.436",
+          "quantity": {
+            "CodeValue": "YEKZ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Volume from Voxel Summation"
+          },
+          "units": {
+            "CodeValue": "mm3",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "cubic millimeter"
+          }
+        },
+        {
+          "value": "0.018",
+          "quantity": {
+            "CodeValue": "SKGS",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 1"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "0.113",
+          "quantity": {
+            "CodeValue": "BQWJ",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Compactness 2"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        },
+        {
+          "value": "2.069",
+          "quantity": {
+            "CodeValue": "KRCK",
+            "CodingSchemeDesignator": "IBSI",
+            "CodeMeaning": "Spherical Disproportion"
+          },
+          "units": {
+            "CodeValue": "1",
+            "CodingSchemeDesignator": "UCUM",
+            "CodeMeaning": "no units"
+          }
+        }
+      ]
+    }
+  ]
+}
