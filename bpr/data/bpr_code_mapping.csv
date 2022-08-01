@@ -1,5 +1,5 @@
 BPR_code,CodingSchemeDesignator,CodeValue,CodeMeaning,modifier_CodingSchemeDesignator,modifier_CodeValue,modifier_CodeMeaning
-C1,﻿SCT,14806007,C1 vertebra,DCM,111010,Center
+C1,SCT,14806007,C1 vertebra,DCM,111010,Center
 C2,SCT,39976000,C2 vertebra,DCM,111010,Center
 C3,SCT,113205007,C3 vertebra,DCM,111010,Center
 C4,SCT,5329002,C4 vertebra,DCM,111010,Center
@@ -26,11 +26,11 @@ L5,SCT,49668003,L5 vertebra,DCM,111010,Center
 pelvis_start,SCT,8106092008,Pelvis,99IDC,100001,First slice
 femur_end,SCT,71341001,Femur,99IDC,100002,Last slice
 pelvis_end,SCT,8106092008,Pelvis,99IDC,100002,Last slice
-kidneys,SCT,64033007​,Kidney,,,
-lung_start,SCT,39607008​,Lung,99IDC,100001,First slice
-lung_end,SCT,39607008​,Lung,99IDC,100002,Last slice
+kidneys,SCT,64033007,Kidney,,,
+lung_start,SCT,39607008,Lung,99IDC,100001,First slice
+lung_end,SCT,39607008,Lung,99IDC,100002,Last slice
 liver_end,SCT,10200004,Liver,99IDC,100002,Last slice
-teeth,SCT,28035005​,"Teeth, gums and​ supporting structures​",,,
-nose,SCT,45206002​,Nose,,,
-eyes_end,SCT,40638003​,Both eyes,99IDC,100002,Last slice
+teeth,SCT,28035005,Teeth, gums and supporting structures,,,
+nose,SCT,45206002,Nose,,,
+eyes_end,SCT,40638003,Both eyes,99IDC,100002,Last slice
 head_end,SCT,69536005,Head,99IDC,100002,Last slice
