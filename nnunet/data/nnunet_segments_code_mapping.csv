@@ -1,0 +1,5 @@
+segment,Finding_CodingSchemeDesignator,Finding_CodeValue,Finding_CodeMeaning,FindingSite_CodingSchemeDesignator,FindingSite_CodeValue,FindingSite_CodeMeaning
+Esophagus,SCT,113343008,Organ,SCT,32849002,Esophagus
+Heart,SCT,113343008,Organ,SCT,80891009,Heart
+Trachea,SCT,113343008,Organ,SCT,44567001,Trachea
+Aorta,SCT,113343008,Organ,SCT,15825003,Aorta
