@@ -1,0 +1,7 @@
+﻿BPR_code_region,target_CodingSchemeDesignator,target_CodeValue,target_CodeMeaning,CodingSchemeDesignator,CodeValue,CodeMeaning
+legs,DCM,123014,Target Region,SCT,30021000,Legs
+pelvis,DCM,123014,Target Region,SCT,12921003,Pelvis
+abdomen,DCM,123014,Target Region,SCT,113345001,Abdomen
+chest,DCM,123014,Target Region,SCT,51185008,Chest
+shoulder-neck,DCM,123014,Target Region,SCT,45048000,Neck
+head,DCM,123014,Target Region,SCT,69536005,Head
