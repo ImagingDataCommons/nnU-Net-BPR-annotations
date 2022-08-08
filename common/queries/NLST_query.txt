@@ -1,0 +1,140 @@
+WITH
+  nlst_positive AS (
+  SELECT
+    SAFE_CAST(pid AS STRING) AS pid,
+    PatientID, 
+    StudyInstanceUID,
+    SeriesInstanceUID 
+  FROM
+    `bigquery-public-data.idc_current.nlst_prsn` AS nlst
+  JOIN
+    `bigquery-public-data.idc_current.dicom_all` AS dicom_all
+  ON
+    SAFE_CAST(nlst.pid AS STRING) = dicom_all.PatientID
+  WHERE
+    can_scr = 1
+  ),
+
+
+
+  nlst_instances_per_series AS (
+  SELECT
+    ANY_VALUE(nlst_positive.PatientID) AS PatientID,
+    nlst_positive.StudyInstanceUID,
+    nlst_positive.SeriesInstanceUID,
+    COUNT(DISTINCT(SOPInstanceUID)) AS num_instances,
+    COUNT(DISTINCT(ARRAY_TO_STRING(ImagePositionPatient,"/"))) AS position_count,
+    COUNT(DISTINCT(ARRAY_TO_STRING(PixelSpacing,"/"))) AS pixel_spacing_count,
+    COUNT(DISTINCT(ARRAY_TO_STRING(ImageOrientationPatient,"/"))) AS orientation_count,
+    MIN(SAFE_CAST(SliceThickness AS float64)) AS min_SliceThickness,
+    MAX(SAFE_CAST(SliceThickness AS float64)) AS max_SliceThickness,
+    MIN(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS float64)) AS min_SliceLocation,
+    MAX(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS float64)) AS max_SliceLocation,
+    STRING_AGG(DISTINCT(SAFE_CAST("LOCALIZER" IN UNNEST(ImageType) AS string)),"") AS has_localizer,
+    ANY_VALUE(dicom_all.ImageOrientationPatient) AS ImageOrientationPatient,
+    ANY_VALUE(dicom_all.Modality) AS Modality
+  FROM
+    `bigquery-public-data.idc_current.dicom_all` as dicom_all 
+  JOIN
+    nlst_positive 
+  ON 
+    nlst_positive.SeriesInstanceUID = dicom_all.SeriesInstanceUID
+  WHERE
+    collection_id = "nlst"
+    AND Modality = "CT"
+  GROUP BY
+    StudyInstanceUID,
+    SeriesInstanceUID ),
+
+
+
+  distinct_slice_location_difference_values AS (
+  SELECT 
+      # DISTINCT(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC) - LAG(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) OVER(partition by SeriesInstanceUID ORDER BY SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC) DESC)) AS SliceLocation_difference,
+      DISTINCT(TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) - LAG(TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1),1) OVER(partition by SeriesInstanceUID ORDER BY TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) DESC)) AS SliceLocation_difference,
+      SeriesInstanceUID,
+      StudyInstanceUID
+  FROM
+      `bigquery-public-data.idc_current.dicom_all`
+  ),
+
+
+
+  nlst_values_per_series AS (
+  SELECT
+    # COUNT(DISTINCT(distinct_slice_location_difference_values.SliceLocation_difference)) as num_differences,
+    COUNT(distinct_slice_location_difference_values.SliceLocation_difference) as num_differences,
+    MAX(ABS(distinct_slice_location_difference_values.SliceLocation_difference)) as max_difference,
+    MIN(ABS(distinct_slice_location_difference_values.SliceLocation_difference)) as min_difference,
+    ANY_VALUE(nlst_instances_per_series.PatientID) AS PatientID,
+    ANY_VALUE(nlst_instances_per_series.StudyInstanceUID) AS StudyInstanceUID,
+    distinct_slice_location_difference_values.SeriesInstanceUID AS SeriesInstanceUID,
+    ANY_VALUE(nlst_instances_per_series.Modality) AS Modality,
+    ANY_VALUE(nlst_instances_per_series.num_instances) AS num_instances,
+    ANY_VALUE(nlst_instances_per_series.ImageOrientationPatient) AS ImageOrientationPatient
+  FROM
+    distinct_slice_location_difference_values
+  JOIN
+    nlst_instances_per_series
+  ON
+    nlst_instances_per_series.SeriesInstanceUID = distinct_slice_location_difference_values.SeriesInstanceUID
+  WHERE
+    nlst_instances_per_series.min_SliceThickness >= 1.5
+    AND nlst_instances_per_series.max_SliceThickness <= 3.5
+    AND nlst_instances_per_series.num_instances > 100
+    AND nlst_instances_per_series.num_instances/nlst_instances_per_series.position_count = 1
+    AND nlst_instances_per_series.pixel_spacing_count = 1
+    AND nlst_instances_per_series.orientation_count = 1
+    AND has_localizer = "false" 
+    AND ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(0)] AS float64)) > ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(1)] AS float64))
+    AND ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(0)] AS float64)) > ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(2)] AS float64))
+    AND ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(4)] AS float64)) > ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(3)] AS float64))
+    AND ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(4)] AS float64)) > ABS(SAFE_CAST(nlst_instances_per_series.ImageOrientationPatient[SAFE_OFFSET(5)] AS float64))
+   
+  GROUP BY
+    distinct_slice_location_difference_values.SeriesInstanceUID ),
+
+
+
+
+  select_single_series_from_study AS (
+  SELECT
+    ANY_VALUE(PatientID) AS PatientID, 
+    StudyInstanceUID,
+    ANY_VALUE(SeriesInstanceUID) AS SeriesInstanceUID,
+    ANY_VALUE(Modality) AS Modality,
+    ANY_VALUE(nlst_values_per_series.num_differences) AS num_differences, 
+    ANY_VALUE(nlst_values_per_series.max_difference) AS max_difference, 
+    ANY_VALUE(nlst_values_per_series.min_difference) AS min_difference,
+    ANY_VALUE(nlst_values_per_series.num_instances) AS num_instances
+  FROM
+    nlst_values_per_series
+  GROUP BY
+    StudyInstanceUID )
+
+
+
+  SELECT 
+    DISTINCT(select_single_series_from_study.SeriesInstanceUID) as SeriesInstanceUID,
+    select_single_series_from_study.PatientID,
+    select_single_series_from_study.StudyInstanceUID,
+    select_single_series_from_study.Modality, 
+    select_single_series_from_study.num_instances,
+    select_single_series_from_study.num_differences,
+    select_single_series_from_study.max_difference, 
+    select_single_series_from_study.min_difference,
+    CONCAT("https://viewer.imaging.datacommons.cancer.gov/viewer/",select_single_series_from_study.StudyInstanceUID,"?seriesInstanceUID=",select_single_series_from_study.SeriesInstanceUID) AS idc_url,
+    dicom_all.gcs_url 
+  FROM 
+   `bigquery-public-data.idc_current.dicom_all` AS dicom_all
+  JOIN 
+    select_single_series_from_study 
+  ON 
+    dicom_all.SeriesInstanceUID = select_single_series_from_study.SeriesInstanceUID 
+  WHERE
+    # select_single_series_from_study.num_differences > 1
+    # AND select_single_series_from_study.max_difference/select_single_series_from_study.min_difference > 2
+    select_single_series_from_study.num_differences <= 2
+    AND select_single_series_from_study.max_difference/select_single_series_from_study.min_difference < 2
+   # FROM 
+   # select_single_series_from_study
