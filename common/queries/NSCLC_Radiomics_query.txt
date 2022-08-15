@@ -1,0 +1,75 @@
+WITH
+  nsclc_radiomics_instances_per_series AS (
+  SELECT
+    DISTINCT(SeriesInstanceUID),
+    COUNT(DISTINCT(SOPInstanceUID)) AS num_instances,
+    COUNT(DISTINCT(ARRAY_TO_STRING(ImagePositionPatient,"/"))) AS position_count,
+    COUNT(DISTINCT(ARRAY_TO_STRING(PixelSpacing,"/"))) AS pixel_spacing_count,
+    COUNT(DISTINCT(ARRAY_TO_STRING(ImageOrientationPatient,"/"))) AS orientation_count,
+    STRING_AGG(DISTINCT(SAFE_CAST("LOCALIZER" IN UNNEST(ImageType) AS string)),"") AS has_localizer
+  FROM
+    `bigquery-public-data.idc_current.dicom_all`
+  WHERE
+    collection_id = "nsclc_radiomics"
+    AND Modality = "CT"
+  GROUP BY
+    SeriesInstanceUID
+    ),
+
+  distinct_slice_location_difference_values AS (
+  SELECT 
+    -- SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC) - LAG(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) OVER(partition by SeriesInstanceUID ORDER BY SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC) DESC) AS SliceLocation_difference,
+          DISTINCT(TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) - LAG(TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1),1) OVER(partition by SeriesInstanceUID ORDER BY TRUNC(SAFE_CAST(ImagePositionPatient[SAFE_OFFSET(2)] AS NUMERIC),1) DESC)) AS SliceLocation_difference,
+    SeriesInstanceUID,
+    StudyInstanceUID
+  FROM
+    `bigquery-public-data.idc_current.dicom_all`
+  ),
+
+  nsclc_radiomics_values_per_series AS (
+  SELECT
+    COUNT(DISTINCT(distinct_slice_location_difference_values.SliceLocation_difference)) as num_differences, 
+    ANY_VALUE(distinct_slice_location_difference_values.StudyInstanceUID) AS StudyInstanceUID,
+    distinct_slice_location_difference_values.SeriesInstanceUID AS SeriesInstanceUID,
+    ANY_VALUE(nsclc_radiomics_instances_per_series.num_instances) AS num_instances,
+    ANY_VALUE(CONCAT("https://viewer.imaging.datacommons.cancer.gov/viewer/",distinct_slice_location_difference_values.StudyInstanceUID,"?seriesInstanceUID=",distinct_slice_location_difference_values.SeriesInstanceUID)) AS idc_url,
+    MAX(ABS(distinct_slice_location_difference_values.SliceLocation_difference)) as max_difference,
+    MIN(ABS(distinct_slice_location_difference_values.SliceLocation_difference)) as min_difference
+  FROM
+     distinct_slice_location_difference_values 
+  JOIN
+    nsclc_radiomics_instances_per_series
+  ON
+    nsclc_radiomics_instances_per_series.SeriesInstanceUID = distinct_slice_location_difference_values.SeriesInstanceUID
+  WHERE
+    nsclc_radiomics_instances_per_series.num_instances/nsclc_radiomics_instances_per_series.position_count = 1
+    AND nsclc_radiomics_instances_per_series.pixel_spacing_count = 1
+    AND nsclc_radiomics_instances_per_series.orientation_count = 1
+    AND has_localizer = "false"
+  GROUP BY 
+    distinct_slice_location_difference_values.SeriesInstanceUID)
+
+
+  SELECT 
+    dicom_all.PatientID, 
+    dicom_all.StudyInstanceUID, 
+    dicom_all.SeriesInstanceUID, 
+    dicom_all.Modality,
+    nsclc_radiomics_values_per_series.num_instances,
+    nsclc_radiomics_values_per_series.num_differences,
+    nsclc_radiomics_values_per_series.max_difference, 
+    nsclc_radiomics_values_per_series.min_difference,
+    nsclc_radiomics_values_per_series.idc_url,
+    dicom_all.gcs_url 
+  FROM 
+   `bigquery-public-data.idc_current.dicom_all` AS dicom_all
+  JOIN 
+    nsclc_radiomics_values_per_series
+  ON 
+    dicom_all.SeriesInstanceUID = nsclc_radiomics_values_per_series.SeriesInstanceUID  
+  WHERE
+    # nsclc_radiomics_values_per_series.num_differences = 1
+    nsclc_radiomics_values_per_series.num_differences <= 2
+    AND nsclc_radiomics_values_per_series.max_difference/nsclc_radiomics_values_per_series.min_difference < 2
+  ORDER BY 
+    dicom_all.PatientID 
