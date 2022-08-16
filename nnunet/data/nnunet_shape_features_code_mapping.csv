@@ -1,15 +1,15 @@
-﻿shape_feature,quantity_CodingSchemeDesignator,quantity_CodeValue,quantity_CodeMeaning,units_CodingSchemeDesignator,units_CodeValue,units_CodeMeaning
+shape_features,quantity_CodingSchemeDesignator,quantity_CodeValue,quantity_CodeMeaning,units_CodingSchemeDesignator,units_CodeValue,units_CodeMeaning
 Elongation,IBSI,Q3CK,Elongation,UCUM,mm,millimeter
 Flatness,IBSI,N17B,Flatness,UCUM,mm,millimeter
-LeastAxisLength,IBSI,7J51,Least Axis in 3D Length,UCUM,mm,millimeter
-MajorAxisLength,IBSI,TDIC,Major Axis in 3D Length,UCUM,mm,millimeter
-Maximum3DDiameter,IBSI,L0JK,Maximum 3D Diameter of a Mesh,UCUM,mm,millimeter
-MeshVolume,IBSI,RNU0,Volume of Mesh,UCUM,mm3,cubic millimeter
-MinorAxisLength,IBSI,P9VJ,Minor Axis in 3D Length,UCUM,mm,millimeter
-Sphericity,IBSI,QCFX,Sphericity,UCUM,1,no units
-SurfaceArea,IBSI,C0JK,Surface Area of Mesh,UCUM,mm2,square millimeter
-SurfaceVolumeRatio,IBSI,2PR5,Surface to Volume Ratio,UCUM,/mm,per millimeter
-VoxelVolume,IBSI,YEKZ,Volume from Voxel Summation,UCUM,mm3,cubic millimeter
-Compactness1,IBSI,SKGS,Compactness 1,UCUM,1,no units
-Compactness2,IBSI,BQWJ,Compactness 2,UCUM,1,no units
-SphericalDisproportion,IBSI,KRCK,Spherical Disproportion,UCUM,1,no units
+LeastAxisLength,IBSI,7J51,Least Axis in 3D Length,UCUM,mm,millimeter
+MajorAxisLength,IBSI,TDIC,Major Axis in 3D Length,UCUM,mm,millimeter
+Maximum3DDiameter,IBSI,L0JK,Maximum 3D Diameter of a Mesh,UCUM,mm,millimeter
+MeshVolume,IBSI,RNU0,Volume of Mesh,UCUM,mm3,cubic millimeter 
+MinorAxisLength,IBSI,P9VJ,Minor Axis in 3D Length,UCUM,mm,millimeter
+Sphericity,IBSI,QCFX,Sphericity,UCUM,1,no units
+SurfaceArea,IBSI,C0JK,Surface Area of Mesh,UCUM,mm2,square millimeter
+SurfaceVolumeRatio,IBSI,2PR5,Surface to Volume Ratio,UCUM,/mm,per millimeter
+VoxelVolume,IBSI,YEKZ,Volume from Voxel Summation,UCUM,mm3,cubic millimeter
+Compactness1,IBSI,SKGS,Compactness 1,UCUM,1,no units
+Compactness2,IBSI,BQWJ,Compactness 2,UCUM,1,no units
+SphericalDisproportion,IBSI,KRCK,Spherical Disproportion,UCUM,1,no units
