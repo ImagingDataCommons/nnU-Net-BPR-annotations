@@ -1,4 +1,4 @@
-shape_features,quantity_CodingSchemeDesignator,quantity_CodeValue,quantity_CodeMeaning,units_CodingSchemeDesignator,units_CodeValue,units_CodeMeaning
+shape_feature,quantity_CodingSchemeDesignator,quantity_CodeValue,quantity_CodeMeaning,units_CodingSchemeDesignator,units_CodeValue,units_CodeMeaning
 Elongation,IBSI,Q3CK,Elongation,UCUM,mm,millimeter
 Flatness,IBSI,N17B,Flatness,UCUM,mm,millimeter
 LeastAxisLength,IBSI,7J51,Least Axis in 3D Length,UCUM,mm,millimeter
