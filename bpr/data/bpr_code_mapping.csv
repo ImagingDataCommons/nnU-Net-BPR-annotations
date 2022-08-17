@@ -23,7 +23,7 @@ L2,SCT,14293000,L2 vertebra,DCM,111010,Center
 L3,SCT,36470004,L3 vertebra,DCM,111010,Center
 L4,SCT,11994002,L4 vertebra,DCM,111010,Center
 L5,SCT,49668003,L5 vertebra,DCM,111010,Center
-pelvis_start,SCT,8106092008,SCT,42161009,Bottom
+pelvis_start,SCT,8106092008,Pelvis,SCT,42161009,Bottom
 femur_end,SCT,71341001,Femur,SCT,421812003,Top
 pelvis_end,SCT,8106092008,Pelvis,SCT,421812003,Top
 kidneys,SCT,64033007,Kidney,,,
