@@ -19,7 +19,7 @@ import json
 
 import numpy as np
 import SimpleITK as sitk
-import src.pyplastimatch.pyplastimatch.pyplastimatch as pypla
+import pyplastimatch as pypla
 
 
 def pypla_nifti_to_nrrd(pred_nifti_path, processed_nrrd_path,

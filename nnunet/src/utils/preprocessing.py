@@ -12,7 +12,7 @@
 
 import os
 import shutil
-import src.pyplastimatch.pyplastimatch.pyplastimatch as pypla
+import pyplastimatch as pypla
 
 
 def pypla_dicom_ct_to_nrrd(sorted_base_path, processed_nrrd_path,
