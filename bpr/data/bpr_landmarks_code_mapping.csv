@@ -26,11 +26,11 @@ L5,SCT,49668003,L5 vertebra,DCM,111010,Center
 pelvis_start,SCT,8106092008,Pelvis,SCT,42161009,Bottom
 femur_end,SCT,71341001,Femur,SCT,421812003,Top
 pelvis_end,SCT,8106092008,Pelvis,SCT,421812003,Top
-kidney,SCT,64033007,Kidney,,,
+kidney,SCT,64033007,Kidney,SCT,42161009,Bottom
 lung_start,SCT,39607008,Lung,SCT,421610009,Bottom
 lung_end,SCT,39607008,Lung,SCT,421812003,Top
 liver_end,SCT,10200004,Liver,SCT,421812003,Top
-teeth,SCT,28035005,"Teeth, gums and supporting structures",,,
-nose,SCT,45206002,Nose,,,
+teeth,SCT,28035005,"Teeth, gums and supporting structures",DCM,111010,Center
+nose,SCT,45206002,Nose,SCT,42161009,Bottom
 eyes_end,SCT,81745001,Eye,SCT,421812003,Top
 head_end,SCT,69536005,Head,SCT,421812003,Top
