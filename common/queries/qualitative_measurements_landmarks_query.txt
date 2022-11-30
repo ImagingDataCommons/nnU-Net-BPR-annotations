@@ -1,0 +1,114 @@
+WITH
+
+  flattened_table AS (
+    SELECT
+      ROW_NUMBER() OVER (PARTITION BY PatientID, trackingIdentifier, trackingUniqueIdentifier, SeriesInstanceUID, measurementGroup_number ) rownumber,
+      ROW_NUMBER() OVER (PARTITION BY PatientID, trackingIdentifier, trackingUniqueIdentifier, SeriesInstanceUID, measurementGroup_number )+1 rownumberplusone,
+      t.CodeMeaning AS organ,
+      # u.ReferencedSOPInstanceUID,
+      u.ReferencedSOPInstanceUID as ref_sop_id,
+      v.CodeMeaning AS attribute,
+      v.CodingSchemeDesignator,
+      v.CodeValue,
+      PatientID,
+      trackingIdentifier,
+      trackingUniqueIdentifier,
+      SeriesInstanceUID,
+      measurementGroup_number,
+      SOPInstanceUID #
+    FROM
+      `idc-external-018.dataset_nsclc.measurement_group_landmarks` r # this table/view should be created from the NSCLC_Radiomics_measurement_group_landmarks_query.txt query
+    LEFT JOIN
+      UNNEST(r.contentSequence.ContentSequence) p
+    LEFT JOIN
+      UNNEST(p.ConceptCodeSequence) t
+    LEFT JOIN
+      UNNEST(p.ReferencedSOPSequence) u
+    LEFT JOIN 
+      UNNEST(p.ConceptNameCodeSequence) v
+    LEFT JOIN
+      UNNEST(r.contentSequence.ContentTemplateSequence) q
+    LEFT JOIN
+      UNNEST(r.contentSequence.ConceptNameCodeSequence) s
+    WHERE
+      p.ValueType IN ('IMAGE',
+        'CODE') ),
+
+  targetregions AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='DCM'
+      AND CodeValue="123014"),
+
+  topographicalmodifiers AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='SCT'
+      AND CodeValue="106233006"),
+
+  referencedsopinstanceuids AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='SCT'
+      AND CodeValue="260753009") 
+
+
+SELECT
+  # *
+  tr.PatientID, 
+  tr.SeriesInstanceUID, 
+  tr.SOPInstanceUID, 
+  rsi.ref_sop_id,
+  tr.trackingIdentifier, 
+  tr.trackingUniqueIdentifier,
+  tr.measurementGroup_number, 
+  tr.organ as target_region, 
+  tm.organ as target_region_modifier,
+  # tr.attribute, 
+  # tr.CodingSchemeDesignator, 
+  # tr.CodeValue,
+  dicom_all.SeriesInstanceUID as ReferencedSeriesInstanceUID, 
+  dicom_all.StudyInstanceUID as ReferencedStudyInstanceUID, 
+  ARRAY_TO_STRING(dicom_all.ImagePositionPatient,"/") AS ImagePositionPatient, 
+  ARRAY_TO_STRING(dicom_all.ImageOrientationPatient, "/") AS ImageOrientationPatient
+
+FROM
+  targetregions tr
+LEFT JOIN
+  topographicalmodifiers tm
+ON
+  tr.rownumberplusone=tm.rownumber
+  AND tr.PatientID=tm.PatientID
+  AND tr.trackingIdentifier=tm.trackingIdentifier
+  AND tr.trackingUniqueIdentifier=tm.trackingUniqueIdentifier
+  AND tr.SeriesInstanceUID=tm.SeriesInstanceUID
+  AND tr.measurementGroup_number= tm.measurementGroup_number
+  AND tr.SOPInstanceUID=tm.SOPInstanceUID
+JOIN
+  referencedsopinstanceuids rsi
+ON
+  tr.PatientID=rsi.PatientID
+  AND tr.trackingIdentifier=rsi.trackingIdentifier
+  AND tr.trackingUniqueIdentifier=rsi.trackingUniqueIdentifier
+  AND tr.SeriesInstanceUID=rsi.SeriesInstanceUID
+  AND tr.measurementGroup_number= rsi.measurementGroup_number
+  AND tr.SOPInstanceUID=rsi.SOPInstanceUID
+JOIN
+  `bigquery-public-data.idc_current.dicom_all` as dicom_all
+ON
+  # ref_ids.ref_id.ReferencedSOPInstanceUID = dicom_all.SOPInstanceUID 
+  rsi.ref_sop_id = dicom_all.SOPInstanceUID 
+-- WHERE
+--   tr.PatientID = 'LUNG1-162'
+ORDER BY
+  tr.PatientID,
+  tr.measurementGroup_number
