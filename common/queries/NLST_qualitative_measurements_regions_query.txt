@@ -1,0 +1,66 @@
+WITH code_target_regions AS (
+  SELECT
+      PatientID,
+      SeriesInstanceUID,
+      SOPInstanceUID,
+      measurementGroup_number,
+      trackingIdentifier,
+      trackingUniqueIdentifier,
+      contentSequence.ConceptNameCodeSequence [OFFSET(0)] AS ConceptNameCodeSequence,
+      contentSequence.ConceptCodeSequence [OFFSET(0)] AS ConceptCodeSequence
+    FROM
+      `idc-external-018.dataset_nlst.measurement_group_regions` # this table/view should be created from the NLST_measurement_group_regions_query.txt query
+    CROSS JOIN
+      UNNEST (contentSequence.ContentSequence) AS contentSequence
+    WHERE
+      contentSequence.ValueType = "CODE" 
+      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodeValue = "123014"
+      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodingSchemeDesignator = "DCM"
+),
+
+
+ref_ids AS (
+
+   SELECT
+    PatientID,
+    SeriesInstanceUID,
+    SOPInstanceUID,
+    measurementGroup_number,
+    trackingIdentifier,
+    trackingUniqueIdentifier,
+    contentSequence.ReferencedSOPSequence[OFFSET(0)] as ref_id 
+  FROM
+    `idc-external-018.dataset_nlst.measurement_group_regions` # this table/view should be created from the NLST_measurement_group_regions_query.txt query
+  CROSS JOIN
+    UNNEST (contentSequence.ContentSequence) AS contentSequence
+  WHERE
+    contentSequence.ValueType = "IMAGE"
+)
+
+SELECT 
+  code_target_regions.PatientID,
+  code_target_regions.SeriesInstanceUID,
+  code_target_regions.SOPInstanceUID,
+  code_target_regions.measurementGroup_number,
+  code_target_regions.trackingIdentifier,
+  code_target_regions.trackingUniqueIdentifier,
+  code_target_regions.ConceptNameCodeSequence, 
+  code_target_regions.ConceptCodeSequence, 
+  ref_ids.ref_id.ReferencedSOPInstanceUID as ReferencedSOPInstanceUID, 
+  dicom_all.SeriesInstanceUID as ReferencedSeriesInstanceUID, 
+  dicom_all.StudyInstanceUID as ReferencedStudyInstanceUID
+FROM 
+  code_target_regions 
+JOIN
+  ref_ids 
+ON 
+  code_target_regions.SOPInstanceUID = ref_ids.SOPInstanceUID
+  AND code_target_regions.measurementGroup_number = ref_ids.measurementGroup_number
+JOIN 
+  `bigquery-public-data.idc_current.dicom_all` as dicom_all
+ON
+  ref_ids.ref_id.ReferencedSOPInstanceUID = dicom_all.SOPInstanceUID 
+ORDER BY 
+  code_target_regions.PatientID, 
+  code_target_regions.SeriesInstanceUID, 
+  code_target_regions.measurementGroup_number
