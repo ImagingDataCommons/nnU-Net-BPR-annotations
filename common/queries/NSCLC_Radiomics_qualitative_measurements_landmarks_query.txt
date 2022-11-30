@@ -1,224 +1,114 @@
 WITH
-  measurementGroups AS (
-  WITH
-    contentSequenceLevel1 AS (
-    WITH
-      structuredReports AS (
-      SELECT
-        PatientID,
-        SeriesInstanceUID, 
-        SOPInstanceUID,
-        SeriesDescription,
-        ContentSequence
-      FROM
-        # `idc-external-018.dataset_nlst.nlst_gcp_vm_test_all_run_dicom`
-        # `idc-external-018.dataset_nsclc.nsclc_gcp_vm_test_all_run_dicom`
-        `idc-external-018.dataset_nsclc.dicom_metadata_table`
-      WHERE
-        ( SOPClassUID = "1.2.840.10008.5.1.4.1.1.88.11"
-          OR SOPClassUID = "1.2.840.10008.5.1.4.1.1.88.22"
-          OR SOPClassUID = "1.2.840.10008.5.1.4.1.1.88.33"
-          OR SOPClassUID = "1.2.840.10008.5.1.4.1.1.88.34"
-          OR SOPClassUID = "1.2.840.10008.5.1.4.1.1.88.35" )
-          # and SeriesDescription = "Measurements"
-          and SeriesDescription = "BPR landmark annotations"
-        AND ARRAY_LENGTH(ContentTemplateSequence) <> 0
-        AND ContentTemplateSequence [
-      OFFSET
-        (0)].TemplateIdentifier = "1500"
-        AND ContentTemplateSequence [
-      OFFSET
-        (0)].MappingResource = "DCMR" )
-    SELECT
-      PatientID,
-      SeriesInstanceUID, 
-      SOPInstanceUID,
-      SeriesDescription,
-      contentSequence
-    FROM
-      structuredReports
-    CROSS JOIN
-      UNNEST(ContentSequence) AS contentSequence )
-  SELECT
-    PatientID,
-    SeriesInstanceUID,
-    SOPInstanceUID,
-    SeriesDescription,
-    contentSequence,
-    measurementGroup_number
-  FROM
-    contentSequenceLevel1
-  CROSS JOIN
-    UNNEST (contentSequence.ContentSequence) AS contentSequence
-  WITH
-  OFFSET
-    AS measurementGroup_number
-  WHERE
-    contentSequence.ValueType = "CONTAINER"
-    AND contentSequence.ConceptNameCodeSequence [
-  OFFSET
-    (0)].CodeMeaning = "Measurement Group" 
-    ),
-  measurementGroups_withTrackingID AS (
-  SELECT
-    SOPInstanceUID,
-    PatientID,
-    SeriesInstanceUID,
-    SeriesDescription,
-    measurementGroup_number,
-    unnestedContentSequence.TextValue AS trackingIdentifier,
-    measurementGroups.contentSequence
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "TEXT"
-    AND ( unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodeValue = "112039"
-      AND unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodingSchemeDesignator = "DCM" ) 
-      
-      
-      ),
-  measurementGroups_withTrackingUID AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.UID AS trackingUniqueIdentifier
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "UIDREF"
-    AND ( unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodeValue = "112040"
-      AND unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodingSchemeDesignator = "DCM" ) ),
-  measurementGroups_withSegmentation AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSOPInstanceUID AS segmentationInstanceUID,
-    unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSegmentNumber AS segmentationSegmentNumber
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "IMAGE"
-    AND unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSOPClassUID = "1.2.840.10008.5.1.4.1.1.66.4" ),
-  measurementGroups_withSourceSeries AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.UID AS sourceSegmentedSeriesUID
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "UIDREF"
-    AND ( unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodeValue = "121232"
-      AND unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodingSchemeDesignator = "DCM" ) ),
-  measurementGroups_withFinding AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.ConceptCodeSequence [
-  OFFSET
-    (0)] AS finding
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "CODE"
-    AND ( unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodeValue = "121071"
-      AND unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodingSchemeDesignator = "DCM" ) ),
-  measurementGroups_withFindingSite AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.ConceptCodeSequence [
-  OFFSET
-    (0)] AS findingSite
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "CODE"
-    AND ( unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodeValue = "G-C0E3"
-      AND unnestedContentSequence.ConceptNameCodeSequence [
-    OFFSET
-      (0)].CodingSchemeDesignator = "SRT" ) )
 
-# select * from measurementGroups_withFindingSite
+  flattened_table AS (
+    SELECT
+      ROW_NUMBER() OVER (PARTITION BY PatientID, trackingIdentifier, trackingUniqueIdentifier, SeriesInstanceUID, measurementGroup_number ) rownumber,
+      ROW_NUMBER() OVER (PARTITION BY PatientID, trackingIdentifier, trackingUniqueIdentifier, SeriesInstanceUID, measurementGroup_number )+1 rownumberplusone,
+      t.CodeMeaning AS organ,
+      # u.ReferencedSOPInstanceUID,
+      u.ReferencedSOPInstanceUID as ref_sop_id,
+      v.CodeMeaning AS attribute,
+      v.CodingSchemeDesignator,
+      v.CodeValue,
+      PatientID,
+      trackingIdentifier,
+      trackingUniqueIdentifier,
+      SeriesInstanceUID,
+      measurementGroup_number,
+      SOPInstanceUID #
+    FROM
+      `idc-external-018.dataset_nsclc.measurement_group_landmarks` r # this table/view should be created from the NSCLC_Radiomics_measurement_group_landmarks_query.txt query
+    LEFT JOIN
+      UNNEST(r.contentSequence.ContentSequence) p
+    LEFT JOIN
+      UNNEST(p.ConceptCodeSequence) t
+    LEFT JOIN
+      UNNEST(p.ReferencedSOPSequence) u
+    LEFT JOIN 
+      UNNEST(p.ConceptNameCodeSequence) v
+    LEFT JOIN
+      UNNEST(r.contentSequence.ContentTemplateSequence) q
+    LEFT JOIN
+      UNNEST(r.contentSequence.ConceptNameCodeSequence) s
+    WHERE
+      p.ValueType IN ('IMAGE',
+        'CODE') ),
+
+  targetregions AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='DCM'
+      AND CodeValue="123014"),
+
+  topographicalmodifiers AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='SCT'
+      AND CodeValue="106233006"),
+
+  referencedsopinstanceuids AS (
+    SELECT
+      *
+    FROM
+      flattened_table
+    WHERE
+      CodingSchemeDesignator='SCT'
+      AND CodeValue="260753009") 
+
 
 SELECT
-  mWithUID.SOPInstanceUID,
-  mWithUID.measurementGroup_number,
-  mWithUID.trackingUniqueIdentifier,
-  mWithID.trackingIdentifier,
-  mWithID.PatientID,
-  mWithID.SeriesInstanceUID,
-  mWithID.SeriesDescription,
-  # mWithFinding.finding,
-  # mWithFindingSite.findingSite,
-  # mWithSourceSeries.sourceSegmentedSeriesUID,
-  # mWithSegmentation.segmentationInstanceUID,
-  # mWithSegmentation.segmentationSegmentNumber,
-  mWithID.contentSequence
+  # *
+  tr.PatientID, 
+  tr.SeriesInstanceUID, 
+  tr.SOPInstanceUID, 
+  rsi.ref_sop_id,
+  tr.trackingIdentifier, 
+  tr.trackingUniqueIdentifier,
+  tr.measurementGroup_number, 
+  tr.organ as target_region, 
+  tm.organ as target_region_modifier,
+  # tr.attribute, 
+  # tr.CodingSchemeDesignator, 
+  # tr.CodeValue,
+  dicom_all.SeriesInstanceUID as ReferencedSeriesInstanceUID, 
+  dicom_all.StudyInstanceUID as ReferencedStudyInstanceUID, 
+  ARRAY_TO_STRING(dicom_all.ImagePositionPatient,"/") AS ImagePositionPatient, 
+  ARRAY_TO_STRING(dicom_all.ImageOrientationPatient, "/") AS ImageOrientationPatient
+
 FROM
-  measurementGroups_withTrackingUID AS mWithUID
-JOIN
-  measurementGroups_withTrackingID AS mWithID
-  ---
+  targetregions tr
+LEFT JOIN
+  topographicalmodifiers tm
 ON
-  mWithID.SOPInstanceUID = mWithUID.SOPInstanceUID
-  AND mWithID.measurementGroup_number = mWithUID.measurementGroup_number
--- JOIN
---   measurementGroups_withFinding AS mWithFinding
--- ON
---   mWithID.SOPInstanceUID = mWithFinding.SOPInstanceUID
---   AND mWithID.measurementGroup_number = mWithFinding.measurementGroup_number
-# JOIN
-  # measurementGroups_withFindingSite AS mWithFindingSite
-# ON
-  # mWithID.SOPInstanceUID = mWithFindingSite.SOPInstanceUID
-  # AND mWithID.measurementGroup_number = mWithFindingSite.measurementGroup_number
--- JOIN
---   measurementGroups_withSourceSeries AS mWithSourceSeries
--- ON
---   mWithID.SOPInstanceUID = mWithSourceSeries.SOPInstanceUID
---   AND mWithID.measurementGroup_number = mWithSourceSeries.measurementGroup_number
--- JOIN
---   measurementGroups_withSegmentation AS mWithSegmentation
--- ON
---   mWithID.SOPInstanceUID = mWithSegmentation.SOPInstanceUID
---   AND mWithID.measurementGroup_number = mWithSegmentation.measurementGroup_number
-  ---
+  tr.rownumberplusone=tm.rownumber
+  AND tr.PatientID=tm.PatientID
+  AND tr.trackingIdentifier=tm.trackingIdentifier
+  AND tr.trackingUniqueIdentifier=tm.trackingUniqueIdentifier
+  AND tr.SeriesInstanceUID=tm.SeriesInstanceUID
+  AND tr.measurementGroup_number= tm.measurementGroup_number
+  AND tr.SOPInstanceUID=tm.SOPInstanceUID
+JOIN
+  referencedsopinstanceuids rsi
+ON
+  tr.PatientID=rsi.PatientID
+  AND tr.trackingIdentifier=rsi.trackingIdentifier
+  AND tr.trackingUniqueIdentifier=rsi.trackingUniqueIdentifier
+  AND tr.SeriesInstanceUID=rsi.SeriesInstanceUID
+  AND tr.measurementGroup_number= rsi.measurementGroup_number
+  AND tr.SOPInstanceUID=rsi.SOPInstanceUID
+JOIN
+  `bigquery-public-data.idc_current.dicom_all` as dicom_all
+ON
+  # ref_ids.ref_id.ReferencedSOPInstanceUID = dicom_all.SOPInstanceUID 
+  rsi.ref_sop_id = dicom_all.SOPInstanceUID 
+-- WHERE
+--   tr.PatientID = 'LUNG1-001'
 ORDER BY
-  trackingUniqueIdentifier
+  tr.PatientID,
+  tr.measurementGroup_number
