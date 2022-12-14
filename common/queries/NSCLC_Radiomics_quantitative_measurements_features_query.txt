@@ -108,11 +108,13 @@ WITH
     ConceptCodeSequence AS findingSite,
     measurementGroup_number
   FROM
-    contentSequenceLevel3codes
+    contentSequenceLevel3codes  
   WHERE
-    ConceptNameCodeSequence.CodeValue = "G-C0E3"
-    AND ConceptNameCodeSequence.CodingSchemeDesignator = "SRT" ),
-  ---
+    # ConceptNameCodeSequence.CodeValue = "G-C0E3"
+    # AND ConceptNameCodeSequence.CodingSchemeDesignator = "SRT" ),
+    ConceptNameCodeSequence.CodeValue = "363698007"
+    AND ConceptNameCodeSequence.CodingSchemeDesignator = "SCT"), 
+
   findingsAndFindingSites AS (
   SELECT
     findings.PatientID,
@@ -132,16 +134,8 @@ WITH
     findingSites
   ON
     findings.SOPInstanceUID = findingSites.SOPInstanceUID
-    AND findings.measurementGroup_number = findingSites.measurementGroup_number ) ---
-  # correctness check: the below should result in 11 rows (this is how many segments/measurement
-    # groups are there for each QIN-HEADNCK-01-0139 segmentation
-    #SELECT
-    #  *
-    #FROM
-    #  findingsAndFindingSites
-    #WHERE
-    #  SOPInstanceUID = "1.2.276.0.7230010.3.1.4.8323329.18336.1440004659.731760"
-    ---
+    AND findings.measurementGroup_number = findingSites.measurementGroup_number ) 
+
   SELECT
     contentSequenceLevel3numeric.PatientID,
     contentSequenceLevel3numeric.SOPInstanceUID,
@@ -176,17 +170,16 @@ WITH
     SAFE_CAST( contentSequenceLevel3numeric.MeasuredValueSequence.NumericValue [
     SAFE_OFFSET
       (0)] AS NUMERIC ) AS Value,
-    contentSequenceLevel3numeric.MeasurementUnits AS Units
-    # ,
-    # findingsAndFindingSites.finding,
-    # findingsAndFindingSites.findingSite
+    contentSequenceLevel3numeric.MeasurementUnits AS Units,
+    findingsAndFindingSites.finding,
+    findingsAndFindingSites.findingSite
   FROM
     contentSequenceLevel3numeric
-  -- JOIN
-  --   findingsAndFindingSites
-  -- ON
-  --   contentSequenceLevel3numeric.SOPInstanceUID = findingsAndFindingSites.SOPInstanceUID
-  --   AND contentSequenceLevel3numeric.measurementGroup_number = findingsAndFindingSites.measurementGroup_number ---
+  JOIN
+    findingsAndFindingSites
+  ON
+    contentSequenceLevel3numeric.SOPInstanceUID = findingsAndFindingSites.SOPInstanceUID 
+    AND contentSequenceLevel3numeric.measurementGroup_number = findingsAndFindingSites.measurementGroup_number
     # correctness check: for this patient, there should be 12 rows: 4 segmented nodules, with 3 numeric evaluations for each
     #WHERE
     #  contentSequenceLevel3numeric.PatientID = "LIDC-IDRI-0001"
