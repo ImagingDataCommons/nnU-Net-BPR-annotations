@@ -101,25 +101,28 @@ WITH
       AND unnestedContentSequence.ConceptNameCodeSequence [
     OFFSET
       (0)].CodingSchemeDesignator = "DCM" ) ),
-  measurementGroups_withSegmentation AS (
-  SELECT
-    SOPInstanceUID,
-    measurementGroup_number,
-    unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSOPInstanceUID AS segmentationInstanceUID,
-    unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSegmentNumber AS segmentationSegmentNumber
-  FROM
-    measurementGroups
-  CROSS JOIN
-    UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
-  WHERE
-    unnestedContentSequence.ValueType = "IMAGE"
-    AND unnestedContentSequence.ReferencedSOPSequence[
-  OFFSET
-    (0)].ReferencedSOPClassUID = "1.2.840.10008.5.1.4.1.1.66.4" ),
+
+  -- measurementGroups_withSegmentation AS (
+  -- SELECT
+  --   SOPInstanceUID,
+  --   measurementGroup_number,
+  --   unnestedContentSequence.ReferencedSOPSequence[
+  -- OFFSET
+  --   (0)].ReferencedSOPInstanceUID AS segmentationInstanceUID,
+  --   unnestedContentSequence.ReferencedSOPSequence[
+  -- OFFSET
+  --   (0)].ReferencedSegmentNumber AS segmentationSegmentNumber
+  -- FROM
+  --   measurementGroups
+  -- CROSS JOIN
+  --   UNNEST(contentSequence.ContentSequence) AS unnestedContentSequence
+  -- WHERE
+  --   unnestedContentSequence.ValueType = "IMAGE"
+  --   AND unnestedContentSequence.ReferencedSOPSequence[
+  -- OFFSET
+  --   (0)].ReferencedSOPClassUID = "1.2.840.10008.5.1.4.1.1.66.4" ),
+
+
   measurementGroups_withSourceSeries AS (
   SELECT
     SOPInstanceUID,
@@ -222,4 +225,7 @@ ON
 --   AND mWithID.measurementGroup_number = mWithSegmentation.measurementGroup_number
   ---
 ORDER BY
-  trackingUniqueIdentifier
+  # trackingUniqueIdentifier
+  PatientID, 
+  SeriesInstanceUID,
+  measurementGroup_number
