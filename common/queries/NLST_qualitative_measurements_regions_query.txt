@@ -12,10 +12,12 @@ WITH code_target_regions AS (
       `idc-external-018.dataset_nlst.measurement_group_regions` # this table/view should be created from the NLST_measurement_group_regions_query.txt query
     CROSS JOIN
       UNNEST (contentSequence.ContentSequence) AS contentSequence
-    WHERE
+    WHERE # FindingSite
       contentSequence.ValueType = "CODE" 
-      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodeValue = "123014"
-      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodingSchemeDesignator = "DCM"
+      # AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodeValue = "123014"
+      # AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodingSchemeDesignator = "DCM"
+      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodeValue = "363698007"
+      AND contentSequence.ConceptNameCodeSequence[OFFSET(0)].CodingSchemeDesignator = "SCT"
 ),
 
 
