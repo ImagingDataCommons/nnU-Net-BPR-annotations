@@ -12,6 +12,14 @@ Directory structure:
 Interacting with the enhanced metadata: 
 - Click on [this link](https://nbviewer.org/github/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/scientific_data_paper_usage_notes.ipynb) to open the usage notebook interactively with nbviewer. This will allow you to click on points in the bokeh plot and open the corresponding OHIF viewer urls. 
 - Alternatively, click on these links to interact with the bokeh plots that are included in the Scientific Data manuscript:
+  - [Figure 4](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_dice_heart.html) - Evaluation of the AI-generated annotations with respect to the expert annotations of the heart for NSCLC-Radiomics. 
+  - We also provide the other Dice, Hausdorff distance and Hausdorff 95 metrics for the heart and the esophagus: 
+    - [Dice score of the heart](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_dice_heart.html)
+    - [Hausdorff distance of the heart](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_hd_heart.html)
+    - [Hausdorff distance 95 of the heart](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_hd_95_heart.html)
+    - [Dice score of the esophagus](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_dice_esophagus.html)
+    - [Hausdorff distance of the esopahgus](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_hd_esophagus.html)
+    - [Hausdorff distance 95 of the esophagus](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_hd_95_esophagus.html)
   - [Figure 5](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_5.html) - Evaluation of the heart sphericity radiomics features from the AI-generated annotations compared to the expert from NSCLC-Radiomics.
 
 
