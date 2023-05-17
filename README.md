@@ -27,3 +27,4 @@ Interacting with the enhanced metadata:
   - [Figure 9](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_9.html) - Evaluation of the percentage of slices assigned to each region (head, neck, chest, abdomen, pelvis and legs) for the NLST collection.
 
 
+[![Figure 4](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/main/usage_notebooks/bokeh_figures/figure4.JPG)](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_dice_heart.html)
