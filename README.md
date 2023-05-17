@@ -23,5 +23,6 @@ Interacting with the enhanced metadata:
   - [Figure 5](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_5.html) - Evaluation of the heart sphericity radiomics features from the AI-generated annotations compared to the expert from NSCLC-Radiomics.
   - [Figure 6](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_6.html) - Evaluation of the sphericity radiomics features from the AI-generated annotations from NLST. 
   - [Figure 7](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_7.html) - Difference between the expert lung segmentation and the BPR derived lung_start and lung_end landmarks for NSCLC-Radiomics. 
+  - [Figure 8](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_8.html) - Evaluation of the distribution of distances between the start and end of the lungs in mm for the NLST collection. 
 
 
