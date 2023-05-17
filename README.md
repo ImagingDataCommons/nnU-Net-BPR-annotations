@@ -1,9 +1,10 @@
 # README
 
-This repository contains the Google Colaboratory notebooks and metadata required for the (in progress) Nature Scientific Data manuscript, which references the Zenodo record "AI-derived annotations for the NLST and NSCLC-Radiomics computed tomography imaging collections" [here](https://zenodo.org/record/7822904#.ZGP7jXbMKUk). 
+This repository contains the Google Colaboratory notebooks and metadata required for the Nature Scientific Data manuscript. This references the Zenodo record "AI-derived annotations for the NLST and NSCLC-Radiomics computed tomography imaging collections" [here](https://zenodo.org/record/7822904#.ZGP7jXbMKUk). 
 - We use two publicly available pre-trained AI models for CT volumes (nnUNet and BodyPartRegression) to run inference on a subset of the NLST collection and the NSCLC-Radiomics collection. 
 - We use the IDC platform and leverage Google Cloud components such as BigQuery, Cloud Storage, Compute Engine, and Google Healthcare API to demonstrate the ability to create reproducible workflows and analysis. 
 - We create standardized DICOM Segmentation objects to hold thoracic organ segmentations for the two collections, and additionally extract shape radiomics features from the segments and save as DICOM Structured Reports (SR). For the BodyPartRegression analysis we create a landmarks SR to hold the transverse location of organs and bones, and a regions SR to hold the body part regions assigned to each transverse slice (head, neck, chest, abdomen, pelvis, legs). 
+- These objects were uploaded to Zenodo where they were then ingested into v14 release of IDC!
 
 Directory structure: 
 - The [nnunet](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/nnunet), [bpr](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/bpr) and [common](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/common/queries) directories hold the code and metadata for creating the DICOM Segmentation and SR objects. 
