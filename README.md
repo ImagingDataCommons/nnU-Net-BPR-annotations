@@ -12,7 +12,9 @@ Directory structure:
 
 To interact with the enhanced metadata, one option is to click on [this link](https://nbviewer.org/github/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/scientific_data_paper_usage_notes.ipynb) to open the usage notebook interactively with nbviewer. This will allow you to click on points in the bokeh plot and open the corresponding OHIF viewer urls. 
 
-Or, click on the plots below to interact with them! 
+Or, click on the plots below to interact with them! Here's an example of how to interact: 
+
+![](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_demo.gif)
 
 Figure 4 - Evaluation of the AI-generated annotations with respect to the expert annotations of the heart for NSCLC-Radiomics. 
 [![](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure4.JPG)](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_4_dice_heart.html)
