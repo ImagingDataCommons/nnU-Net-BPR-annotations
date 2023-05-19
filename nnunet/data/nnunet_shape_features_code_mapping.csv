@@ -1,6 +1,6 @@
 shape_feature,quantity_CodingSchemeDesignator,quantity_CodeValue,quantity_CodeMeaning,units_CodingSchemeDesignator,units_CodeValue,units_CodeMeaning
-Elongation,IBSI,Q3CK,Elongation,UCUM,mm,millimeter
-Flatness,IBSI,N17B,Flatness,UCUM,mm,millimeter
+Elongation,IBSI,Q3CK,Elongation,UCUM,1,no units
+Flatness,IBSI,N17B,Flatness,UCUM,1,no units
 LeastAxisLength,IBSI,7J51,Least Axis in 3D Length,UCUM,mm,millimeter
 MajorAxisLength,IBSI,TDIC,Major Axis in 3D Length,UCUM,mm,millimeter
 Maximum3DDiameter,IBSI,L0JK,Maximum 3D Diameter of a Mesh,UCUM,mm,millimeter
