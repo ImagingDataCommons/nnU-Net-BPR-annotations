@@ -1,18 +1,25 @@
-# README
+# Background
 
-This repository contains the Google Colaboratory notebooks and metadata required for the Nature Scientific Data manuscript. This references the Zenodo record "AI-derived annotations for the NLST and NSCLC-Radiomics computed tomography imaging collections" [here](https://zenodo.org/record/7822904#.ZGP7jXbMKUk). 
-- We use two publicly available pre-trained AI models for CT volumes (nnUNet and BodyPartRegression) to run inference on a subset of the NLST collection and the NSCLC-Radiomics collection. 
-- We use the IDC platform and leverage Google Cloud components such as BigQuery, Cloud Storage, Compute Engine, and Google Healthcare API to demonstrate the ability to create reproducible workflows and analysis. 
-- We create standardized DICOM Segmentation objects to hold thoracic organ segmentations for the two collections, and additionally extract shape radiomics features from the segments and save as DICOM Structured Reports (SR). For the BodyPartRegression analysis we create a landmarks SR to hold the transverse location of organs and bones, and a regions SR to hold the body part regions assigned to each transverse slice (head, neck, chest, abdomen, pelvis, legs). 
-- These objects were uploaded to Zenodo where they were then ingested into v14 release of IDC!
+This repository contains the Google Colaboratory notebooks and other related materials accompanying the following dataset, which was generated as part of the effort to enrich the public data available within [NCI Imaging Data Commons (IDC)](https://imaging.datacommons.cancer.gov/):
 
-Directory structure: 
+> Krishnaswamy, D., Bontempi, D., Clunie, D., Aerts, H. & Fedorov, A. AI-derived annotations for the NLST and NSCLC-Radiomics computed tomography imaging collections. (2022). doi:[10.5281/zenodo.7473971](https://zenodo.org/record/7822904)
+
+To generate this dataset, we use publicly available pre-trained AI tools to enhance CT lung cancer collections that are unlabeled or partially labeled. The first tool is the [nnU-Net v1 deep learning framework](https://github.com/MIC-DKFZ/nnUNet/tree/nnunetv1) for volumetric segmentation of organs, where we use a pretrained model (Task D18 using the SegTHOR dataset) for labeling volumetric regions in the image corresponding to the heart, trachea, aorta and esophagus. These are the major organs-at-risk for radiation therapy for lung cancer. We further enhance these annotations by computing 3D shape radiomics features using [pyradiomics](https://github.com/AIM-Harvard/pyradiomics). The second tool is [BodyPartRegression](https://github.com/MIC-DKFZ/BodyPartRegression) - a pretrained model for per-slice automatic labeling of anatomic landmarks and imaged body part regions in axial CT volumes. 
+
+We focus on enhancing two publicly available collections, the Non-small Cell Lung Cancer Radiomics (NSCLC-Radiomics collection) (avaialble in [TCIA](https://wiki.cancerimagingarchive.net/display/Public/NSCLC-Radiomics) and [IDC](https://portal.imaging.datacommons.cancer.gov/explore/filters/?collection_id=Community&collection_id=nsclc_radiomics)), and the National Lung Screening Trial (NLST collection) (available in [TCIA](https://wiki.cancerimagingarchive.net/display/NLST/National+Lung+Screening+Trial) and [IDC](https://portal.imaging.datacommons.cancer.gov/explore/filters/?collection_id=Community&collection_id=nlst)). Importantly, the NSLSC-Radiomics collection includes expert-generated manual annotations of several chest organs, allowing us to quantify performance of the AI tools in that subset of data.
+
+# Purpose of this repository
+
+While the files corresponding to this dataset can be downloaded from the Zenodo record listed above, it is a lot more convenient to explore the dataset using NCI Imaging Data Commons, where it was included since data release v13, see [https://portal.imaging.datacommons.cancer.gov/explore/filters/?analysis_results_id=nnU-Net-BPR-annotations](https://portal.imaging.datacommons.cancer.gov/explore/filters/?analysis_results_id=nnU-Net-BPR-annotations). 
+
+Code organization: 
+
 - The [nnunet](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/nnunet), [bpr](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/bpr) and [common](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/common/queries) directories hold the code and metadata for creating the DICOM Segmentation and SR objects. 
-- The [usage_notebooks](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/usage_notebooks) directory contains materials to demonstrate how to interact with the data, downloading of data from IDC, conversion of DICOM to alternate medical imaging formats, and visualization using open source programs. 
+- The [usage_notebooks](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/tree/main/usage_notebooks) directory contains materials to demonstrate how to interact with the data, downloading of data from IDC, conversion of DICOM to alternate medical imaging formats, and visualization using open source tools. 
 
-To interact with the enhanced metadata, one option is to click on [this link](https://nbviewer.org/github/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/scientific_data_paper_usage_notes.ipynb) to open the usage notebook interactively with nbviewer. This will allow you to click on points in the bokeh plot and open the corresponding OHIF viewer urls. 
+To get started with the dataset, check out [this usage notebook](https://nbviewer.org/github/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/scientific_data_paper_usage_notes.ipynb). This will allow you to explore the dataset by clicking on points in the bokeh plot and open the corresponding images using viewer links embedded in the plot. 
 
-Another option is to interact with bokeh plots. Here's an example of how to interact: 
+You can also use the pre-generated interactive bokeh plots referenced below. Each of the figures you see below is linked with its interactive version, as demonstrated in the video below.
 
 ![](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_demo.gif)
 
@@ -66,3 +73,7 @@ Figure 9 - Evaluation of the AI-generated annotations with respect to the expert
   - [Figure 8](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_8.html) - Evaluation of the distribution of distances between the start and end of the lungs in mm for the NLST collection. 
   - [Figure 9](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_9.html) - Evaluation of the percentage of slices assigned to each region (head, neck, chest, abdomen, pelvis and legs) for the NLST collection.
 -->
+
+# Support
+
+For any questions related to this dataset, please [open an issue in this repository\(https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/issues/new), or post your question in the [IDC forum](https://discourse.canceridc.dev/).
