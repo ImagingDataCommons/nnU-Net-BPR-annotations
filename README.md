@@ -46,7 +46,7 @@ Figure 6 - Evaluation of the sphericity radiomics features from the AI-generated
 
 Figure 7 - Difference between the expert lung segmentation and the BPR derived lung_start and lung_end landmarks for NSCLC-Radiomics.  
 
-
+[![](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure7.JPG)](https://htmlpreview.github.io/?https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/blob/main/usage_notebooks/bokeh_figures/figure_7.html)
 
 Figure 8 - Evaluation of the distribution of distances between the start and end of the lungs in mm for the NLST collection. 
 
