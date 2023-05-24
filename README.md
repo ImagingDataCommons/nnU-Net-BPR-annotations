@@ -76,4 +76,4 @@ Figure 9 - Evaluation of the AI-generated annotations with respect to the expert
 
 # Support
 
-For any questions related to this dataset, please [open an issue in this repository\(https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/issues/new), or post your question in the [IDC forum](https://discourse.canceridc.dev/).
+For any questions related to this dataset, please [open an issue in this repository](https://github.com/ImagingDataCommons/nnU-Net-BPR-annotations/issues/new), or post your question in the [IDC forum](https://discourse.canceridc.dev/).
