@@ -6,7 +6,9 @@ This repository contains the Google Colaboratory notebooks and other related mat
 
 > Krishnaswamy, D., Bontempi, D., Clunie, D., Aerts, H. & Fedorov, A. AI-derived annotations for the NLST and NSCLC-Radiomics computed tomography imaging collections. (2022). [https://doi.org/10.5281/zenodo.7473970](https://doi.org/10.5281/zenodo.7473970)
 
-For more details on how this dataset was generated and how to use it please check out this preprint:
+For more details on how this dataset was generated and how to use it please refer to our [publication](https://www.nature.com/articles/s41597-023-02864-y):
+
+> Krishnaswamy D, Bontempi D, Thiriveedhi VK, Punzo D, Clunie D, Bridge CP, Aerts HJ, Kikinis R, Fedorov A. Enrichment of lung cancer computed tomography collections with AI-derived annotations. Scientific Data. 2024 Jan 4;11(1):25. 
 
 > Krishnaswamy, D., Bontempi, D., Thiriveedhi, V., Punzo, D., Clunie, D., Bridge, C. P., Aerts, H. J., Kikinis, R. & Fedorov, A. Enrichment of the NLST and NSCLC-Radiomics computed tomography collections with AI-derived annotations. arXiv [cs.CV] (2023). at [https://arxiv.org/abs/2306.00150](https://arxiv.org/abs/2306.00150)
 
